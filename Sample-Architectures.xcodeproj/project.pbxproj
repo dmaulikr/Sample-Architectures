@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		457A7853C8F0D62DE78F8E83 /* Pods_Sample_Architectures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6D8855A38FF9BF2A08321E /* Pods_Sample_Architectures.framework */; };
+		8E8675F11D52F8DF00C73659 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675C81D52F8DF00C73659 /* AppDelegate.swift */; };
+		8E8675F21D52F8DF00C73659 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E8675C91D52F8DF00C73659 /* Assets.xcassets */; };
+		8E8675F31D52F8DF00C73659 /* MainMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675CB1D52F8DF00C73659 /* MainMenuTableViewController.swift */; };
+		8E8675F41D52F8DF00C73659 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E8675CC1D52F8DF00C73659 /* Info.plist */; };
+		8E8675F51D52F8DF00C73659 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675CE1D52F8DF00C73659 /* Person.swift */; };
+		8E8675F61D52F8DF00C73659 /* ListPeopleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675D01D52F8DF00C73659 /* ListPeopleCell.swift */; };
+		8E8675F71D52F8DF00C73659 /* MVCAddPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675D11D52F8DF00C73659 /* MVCAddPersonViewController.swift */; };
+		8E8675F81D52F8DF00C73659 /* MVCListPeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675D21D52F8DF00C73659 /* MVCListPeopleViewController.swift */; };
+		8E8675F91D52F8DF00C73659 /* MVCShowPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675D31D52F8DF00C73659 /* MVCShowPersonViewController.swift */; };
+		8E8675FA1D52F8DF00C73659 /* AddPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675D51D52F8DF00C73659 /* AddPersonViewController.swift */; };
+		8E8675FB1D52F8DF00C73659 /* AddPersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675D61D52F8DF00C73659 /* AddPersonViewModel.swift */; };
+		8E8675FC1D52F8DF00C73659 /* ListPeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675D71D52F8DF00C73659 /* ListPeopleViewController.swift */; };
+		8E8675FD1D52F8DF00C73659 /* ListPeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675D81D52F8DF00C73659 /* ListPeopleViewModel.swift */; };
+		8E8675FE1D52F8DF00C73659 /* ShowPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675D91D52F8DF00C73659 /* ShowPersonViewController.swift */; };
+		8E8675FF1D52F8DF00C73659 /* ShowPersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675DA1D52F8DF00C73659 /* ShowPersonViewModel.swift */; };
+		8E8676001D52F8DF00C73659 /* MemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675DD1D52F8DF00C73659 /* MemStore.swift */; };
+		8E8676011D52F8DF00C73659 /* StoreProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675DE1D52F8DF00C73659 /* StoreProtocol.swift */; };
+		8E8676021D52F8DF00C73659 /* ListPeopleModuleAPIDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675E31D52F8DF00C73659 /* ListPeopleModuleAPIDataManager.swift */; };
+		8E8676031D52F8DF00C73659 /* ListPeopleModuleLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675E51D52F8DF00C73659 /* ListPeopleModuleLocalDataManager.swift */; };
+		8E8676041D52F8DF00C73659 /* ListPeopleModuleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675E71D52F8DF00C73659 /* ListPeopleModuleInteractor.swift */; };
+		8E8676051D52F8DF00C73659 /* ListPeopleModuleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675E81D52F8DF00C73659 /* ListPeopleModuleItem.swift */; };
+		8E8676061D52F8DF00C73659 /* ListPeopleModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675EA1D52F8DF00C73659 /* ListPeopleModulePresenter.swift */; };
+		8E8676071D52F8DF00C73659 /* ListPeopleModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675EC1D52F8DF00C73659 /* ListPeopleModuleProtocols.swift */; };
+		8E8676081D52F8DF00C73659 /* ListPeopleModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675EE1D52F8DF00C73659 /* ListPeopleModuleView.swift */; };
+		8E8676091D52F8DF00C73659 /* ListPeopleModuleWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675F01D52F8DF00C73659 /* ListPeopleModuleWireFrame.swift */; };
+		8E86760F1D52FD2500C73659 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E86760D1D52FD2500C73659 /* Main.storyboard */; };
+		8E8676111D52FD3300C73659 /* RegularMVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E8676101D52FD3300C73659 /* RegularMVC.storyboard */; };
+		8E8676141D52FD3900C73659 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E8676121D52FD3900C73659 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		352FDEA93E6C7207E9246AD3 /* Pods-Sample-Architectures.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample-Architectures.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sample-Architectures/Pods-Sample-Architectures.release.xcconfig"; sourceTree = "<group>"; };
+		8E8675C81D52F8DF00C73659 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "Sample-Architectures/AppDelegate.swift"; sourceTree = SOURCE_ROOT; };
+		8E8675C91D52F8DF00C73659 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Sample-Architectures/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
+		8E8675CB1D52F8DF00C73659 /* MainMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuTableViewController.swift; sourceTree = "<group>"; };
+		8E8675CC1D52F8DF00C73659 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Sample-Architectures/Info.plist"; sourceTree = SOURCE_ROOT; };
+		8E8675CE1D52F8DF00C73659 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		8E8675D01D52F8DF00C73659 /* ListPeopleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPeopleCell.swift; sourceTree = "<group>"; };
+		8E8675D11D52F8DF00C73659 /* MVCAddPersonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVCAddPersonViewController.swift; sourceTree = "<group>"; };
+		8E8675D21D52F8DF00C73659 /* MVCListPeopleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVCListPeopleViewController.swift; sourceTree = "<group>"; };
+		8E8675D31D52F8DF00C73659 /* MVCShowPersonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVCShowPersonViewController.swift; sourceTree = "<group>"; };
+		8E8675D51D52F8DF00C73659 /* AddPersonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPersonViewController.swift; sourceTree = "<group>"; };
+		8E8675D61D52F8DF00C73659 /* AddPersonViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPersonViewModel.swift; sourceTree = "<group>"; };
+		8E8675D71D52F8DF00C73659 /* ListPeopleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPeopleViewController.swift; sourceTree = "<group>"; };
+		8E8675D81D52F8DF00C73659 /* ListPeopleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPeopleViewModel.swift; sourceTree = "<group>"; };
+		8E8675D91D52F8DF00C73659 /* ShowPersonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowPersonViewController.swift; sourceTree = "<group>"; };
+		8E8675DA1D52F8DF00C73659 /* ShowPersonViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowPersonViewModel.swift; sourceTree = "<group>"; };
+		8E8675DD1D52F8DF00C73659 /* MemStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemStore.swift; sourceTree = "<group>"; };
+		8E8675DE1D52F8DF00C73659 /* StoreProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreProtocol.swift; sourceTree = "<group>"; };
+		8E8675E31D52F8DF00C73659 /* ListPeopleModuleAPIDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPeopleModuleAPIDataManager.swift; sourceTree = "<group>"; };
+		8E8675E51D52F8DF00C73659 /* ListPeopleModuleLocalDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPeopleModuleLocalDataManager.swift; sourceTree = "<group>"; };
+		8E8675E71D52F8DF00C73659 /* ListPeopleModuleInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPeopleModuleInteractor.swift; sourceTree = "<group>"; };
+		8E8675E81D52F8DF00C73659 /* ListPeopleModuleItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPeopleModuleItem.swift; sourceTree = "<group>"; };
+		8E8675EA1D52F8DF00C73659 /* ListPeopleModulePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPeopleModulePresenter.swift; sourceTree = "<group>"; };
+		8E8675EC1D52F8DF00C73659 /* ListPeopleModuleProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPeopleModuleProtocols.swift; sourceTree = "<group>"; };
+		8E8675EE1D52F8DF00C73659 /* ListPeopleModuleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPeopleModuleView.swift; sourceTree = "<group>"; };
+		8E8675F01D52F8DF00C73659 /* ListPeopleModuleWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPeopleModuleWireFrame.swift; sourceTree = "<group>"; };
+		8E86760C1D52FC3F00C73659 /* Sample-Architectures-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Sample-Architectures-Bridging-Header.h"; path = "Sample-Architectures/Sample-Architectures-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		8E86760E1D52FD2500C73659 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Sample-Architectures/Base.lproj/Main.storyboard"; sourceTree = SOURCE_ROOT; };
+		8E8676101D52FD3300C73659 /* RegularMVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RegularMVC.storyboard; sourceTree = "<group>"; };
+		8E8676131D52FD3900C73659 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Sample-Architectures/Base.lproj/LaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
+		8EFAAC161CB230D700108096 /* Sample-Architectures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample-Architectures.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D6D8855A38FF9BF2A08321E /* Pods_Sample_Architectures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sample_Architectures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B64D6DAC0B1250623F833AE7 /* Pods-Sample-Architectures.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample-Architectures.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sample-Architectures/Pods-Sample-Architectures.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8EFAAC131CB230D700108096 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				457A7853C8F0D62DE78F8E83 /* Pods_Sample_Architectures.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E8675CA1D52F8DF00C73659 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8E8675CB1D52F8DF00C73659 /* MainMenuTableViewController.swift */,
+			);
+			name = Controllers;
+			path = "Sample-Architectures/Controllers";
+			sourceTree = SOURCE_ROOT;
+		};
+		8E8675CD1D52F8DF00C73659 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8E8675CE1D52F8DF00C73659 /* Person.swift */,
+			);
+			name = Models;
+			path = "Sample-Architectures/Models";
+			sourceTree = SOURCE_ROOT;
+		};
+		8E8675CF1D52F8DF00C73659 /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				8E8676101D52FD3300C73659 /* RegularMVC.storyboard */,
+				8E8675D01D52F8DF00C73659 /* ListPeopleCell.swift */,
+				8E8675D11D52F8DF00C73659 /* MVCAddPersonViewController.swift */,
+				8E8675D21D52F8DF00C73659 /* MVCListPeopleViewController.swift */,
+				8E8675D31D52F8DF00C73659 /* MVCShowPersonViewController.swift */,
+			);
+			name = MVC;
+			path = "Sample-Architectures/MVC";
+			sourceTree = SOURCE_ROOT;
+		};
+		8E8675D41D52F8DF00C73659 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				8E8675D51D52F8DF00C73659 /* AddPersonViewController.swift */,
+				8E8675D61D52F8DF00C73659 /* AddPersonViewModel.swift */,
+				8E8675D71D52F8DF00C73659 /* ListPeopleViewController.swift */,
+				8E8675D81D52F8DF00C73659 /* ListPeopleViewModel.swift */,
+				8E8675D91D52F8DF00C73659 /* ShowPersonViewController.swift */,
+				8E8675DA1D52F8DF00C73659 /* ShowPersonViewModel.swift */,
+			);
+			name = MVVM;
+			path = "Sample-Architectures/MVVM";
+			sourceTree = SOURCE_ROOT;
+		};
+		8E8675DC1D52F8DF00C73659 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8E8675DD1D52F8DF00C73659 /* MemStore.swift */,
+				8E8675DE1D52F8DF00C73659 /* StoreProtocol.swift */,
+			);
+			name = Utils;
+			path = "Sample-Architectures/Utils";
+			sourceTree = SOURCE_ROOT;
+		};
+		8E8675DF1D52F8DF00C73659 /* Viper */ = {
+			isa = PBXGroup;
+			children = (
+				8E8675E01D52F8DF00C73659 /* ListPeopleModule */,
+			);
+			name = Viper;
+			path = "Sample-Architectures/Viper";
+			sourceTree = SOURCE_ROOT;
+		};
+		8E8675E01D52F8DF00C73659 /* ListPeopleModule */ = {
+			isa = PBXGroup;
+			children = (
+				8E8675E11D52F8DF00C73659 /* DataManager */,
+				8E8675E61D52F8DF00C73659 /* Interactor */,
+				8E8675E91D52F8DF00C73659 /* Presenter */,
+				8E8675EB1D52F8DF00C73659 /* Protocols */,
+				8E8675ED1D52F8DF00C73659 /* View */,
+				8E8675EF1D52F8DF00C73659 /* WireFrame */,
+			);
+			path = ListPeopleModule;
+			sourceTree = "<group>";
+		};
+		8E8675E11D52F8DF00C73659 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				8E8675E21D52F8DF00C73659 /* API */,
+				8E8675E41D52F8DF00C73659 /* Local */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		8E8675E21D52F8DF00C73659 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				8E8675E31D52F8DF00C73659 /* ListPeopleModuleAPIDataManager.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		8E8675E41D52F8DF00C73659 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				8E8675E51D52F8DF00C73659 /* ListPeopleModuleLocalDataManager.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		8E8675E61D52F8DF00C73659 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				8E8675E71D52F8DF00C73659 /* ListPeopleModuleInteractor.swift */,
+				8E8675E81D52F8DF00C73659 /* ListPeopleModuleItem.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		8E8675E91D52F8DF00C73659 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8E8675EA1D52F8DF00C73659 /* ListPeopleModulePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8E8675EB1D52F8DF00C73659 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8E8675EC1D52F8DF00C73659 /* ListPeopleModuleProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		8E8675ED1D52F8DF00C73659 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8E8675EE1D52F8DF00C73659 /* ListPeopleModuleView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8E8675EF1D52F8DF00C73659 /* WireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				8E8675F01D52F8DF00C73659 /* ListPeopleModuleWireFrame.swift */,
+			);
+			path = WireFrame;
+			sourceTree = "<group>";
+		};
+		8E86760A1D52F8ED00C73659 /* Architecutres */ = {
+			isa = PBXGroup;
+			children = (
+				8E8675CF1D52F8DF00C73659 /* MVC */,
+				8E8675D41D52F8DF00C73659 /* MVVM */,
+				8E8675DF1D52F8DF00C73659 /* Viper */,
+			);
+			name = Architecutres;
+			sourceTree = "<group>";
+		};
+		8E86760B1D52F90300C73659 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8E86760C1D52FC3F00C73659 /* Sample-Architectures-Bridging-Header.h */,
+				8E8675C91D52F8DF00C73659 /* Assets.xcassets */,
+				8E8675CC1D52F8DF00C73659 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8EFAAC0D1CB230D700108096 = {
+			isa = PBXGroup;
+			children = (
+				8EFAAC181CB230D700108096 /* Sample-Architectures */,
+				8EFAAC171CB230D700108096 /* Products */,
+				B1E1B800E6700C2BF175DCC4 /* Pods */,
+				B2927C2DCE978A2BC003BC87 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8EFAAC171CB230D700108096 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8EFAAC161CB230D700108096 /* Sample-Architectures.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8EFAAC181CB230D700108096 /* Sample-Architectures */ = {
+			isa = PBXGroup;
+			children = (
+				8E8676121D52FD3900C73659 /* LaunchScreen.storyboard */,
+				8E86760D1D52FD2500C73659 /* Main.storyboard */,
+				8E8675C81D52F8DF00C73659 /* AppDelegate.swift */,
+				8E8675CA1D52F8DF00C73659 /* Controllers */,
+				8E8675CD1D52F8DF00C73659 /* Models */,
+				8E86760A1D52F8ED00C73659 /* Architecutres */,
+				8E8675DC1D52F8DF00C73659 /* Utils */,
+				8E86760B1D52F90300C73659 /* Supporting Files */,
+			);
+			name = "Sample-Architectures";
+			path = "Sample-MVVM";
+			sourceTree = "<group>";
+		};
+		B1E1B800E6700C2BF175DCC4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B64D6DAC0B1250623F833AE7 /* Pods-Sample-Architectures.debug.xcconfig */,
+				352FDEA93E6C7207E9246AD3 /* Pods-Sample-Architectures.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B2927C2DCE978A2BC003BC87 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D6D8855A38FF9BF2A08321E /* Pods_Sample_Architectures.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8EFAAC151CB230D700108096 /* Sample-Architectures */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EFAAC281CB230D800108096 /* Build configuration list for PBXNativeTarget "Sample-Architectures" */;
+			buildPhases = (
+				CF54DA42530E506EC2C6BAFB /* [CP] Check Pods Manifest.lock */,
+				8EFAAC121CB230D700108096 /* Sources */,
+				8EFAAC131CB230D700108096 /* Frameworks */,
+				8EFAAC141CB230D700108096 /* Resources */,
+				CA0900431865F22185CD8F41 /* [CP] Embed Pods Frameworks */,
+				98B1F885A1670F1CD7347A18 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sample-Architectures";
+			productName = "Sample-MVVM";
+			productReference = 8EFAAC161CB230D700108096 /* Sample-Architectures.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8EFAAC0E1CB230D700108096 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Technophile IT";
+				TargetAttributes = {
+					8EFAAC151CB230D700108096 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 8EFAAC111CB230D700108096 /* Build configuration list for PBXProject "Sample-Architectures" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8EFAAC0D1CB230D700108096;
+			productRefGroup = 8EFAAC171CB230D700108096 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8EFAAC151CB230D700108096 /* Sample-Architectures */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8EFAAC141CB230D700108096 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E8676111D52FD3300C73659 /* RegularMVC.storyboard in Resources */,
+				8E86760F1D52FD2500C73659 /* Main.storyboard in Resources */,
+				8E8675F41D52F8DF00C73659 /* Info.plist in Resources */,
+				8E8676141D52FD3900C73659 /* LaunchScreen.storyboard in Resources */,
+				8E8675F21D52F8DF00C73659 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		98B1F885A1670F1CD7347A18 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sample-Architectures/Pods-Sample-Architectures-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA0900431865F22185CD8F41 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sample-Architectures/Pods-Sample-Architectures-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF54DA42530E506EC2C6BAFB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8EFAAC121CB230D700108096 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E8675FF1D52F8DF00C73659 /* ShowPersonViewModel.swift in Sources */,
+				8E8676001D52F8DF00C73659 /* MemStore.swift in Sources */,
+				8E8676051D52F8DF00C73659 /* ListPeopleModuleItem.swift in Sources */,
+				8E8675FE1D52F8DF00C73659 /* ShowPersonViewController.swift in Sources */,
+				8E8675F71D52F8DF00C73659 /* MVCAddPersonViewController.swift in Sources */,
+				8E8676061D52F8DF00C73659 /* ListPeopleModulePresenter.swift in Sources */,
+				8E8675F91D52F8DF00C73659 /* MVCShowPersonViewController.swift in Sources */,
+				8E8676031D52F8DF00C73659 /* ListPeopleModuleLocalDataManager.swift in Sources */,
+				8E8676021D52F8DF00C73659 /* ListPeopleModuleAPIDataManager.swift in Sources */,
+				8E8675F61D52F8DF00C73659 /* ListPeopleCell.swift in Sources */,
+				8E8676071D52F8DF00C73659 /* ListPeopleModuleProtocols.swift in Sources */,
+				8E8675FC1D52F8DF00C73659 /* ListPeopleViewController.swift in Sources */,
+				8E8675F51D52F8DF00C73659 /* Person.swift in Sources */,
+				8E8676041D52F8DF00C73659 /* ListPeopleModuleInteractor.swift in Sources */,
+				8E8675F11D52F8DF00C73659 /* AppDelegate.swift in Sources */,
+				8E8676081D52F8DF00C73659 /* ListPeopleModuleView.swift in Sources */,
+				8E8675F81D52F8DF00C73659 /* MVCListPeopleViewController.swift in Sources */,
+				8E8675FB1D52F8DF00C73659 /* AddPersonViewModel.swift in Sources */,
+				8E8676011D52F8DF00C73659 /* StoreProtocol.swift in Sources */,
+				8E8676091D52F8DF00C73659 /* ListPeopleModuleWireFrame.swift in Sources */,
+				8E8675F31D52F8DF00C73659 /* MainMenuTableViewController.swift in Sources */,
+				8E8675FD1D52F8DF00C73659 /* ListPeopleViewModel.swift in Sources */,
+				8E8675FA1D52F8DF00C73659 /* AddPersonViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8E86760D1D52FD2500C73659 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E86760E1D52FD2500C73659 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8E8676121D52FD3900C73659 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E8676131D52FD3900C73659 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8EFAAC261CB230D800108096 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8EFAAC271CB230D800108096 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8EFAAC291CB230D800108096 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B64D6DAC0B1250623F833AE7 /* Pods-Sample-Architectures.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "Sample-Architectures/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "it.technophile.Sample-Architectures";
+				PRODUCT_NAME = "Sample-Architectures";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sample-Architectures/Sample-Architectures-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8EFAAC2A1CB230D800108096 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 352FDEA93E6C7207E9246AD3 /* Pods-Sample-Architectures.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "Sample-Architectures/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "it.technophile.Sample-Architectures";
+				PRODUCT_NAME = "Sample-Architectures";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sample-Architectures/Sample-Architectures-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8EFAAC111CB230D700108096 /* Build configuration list for PBXProject "Sample-Architectures" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EFAAC261CB230D800108096 /* Debug */,
+				8EFAAC271CB230D800108096 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EFAAC281CB230D800108096 /* Build configuration list for PBXNativeTarget "Sample-Architectures" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EFAAC291CB230D800108096 /* Debug */,
+				8EFAAC2A1CB230D800108096 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8EFAAC0E1CB230D700108096 /* Project object */;
+}

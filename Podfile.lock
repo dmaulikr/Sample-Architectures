@@ -1,0 +1,37 @@
+PODS:
+  - Alamofire (3.4.1)
+  - JLRoutes (1.6)
+  - RxAlamofire (2.5):
+    - RxAlamofire/Core (= 2.5)
+  - RxAlamofire/Core (2.5):
+    - Alamofire (~> 3.4)
+    - RxSwift (~> 2.5)
+  - RxBlocking (2.6.0):
+    - RxSwift (~> 2.5)
+  - RxCocoa (2.6.0):
+    - RxSwift (~> 2.5)
+  - RxOptional (2.0.0):
+    - RxCocoa (~> 2.0)
+    - RxSwift (~> 2.0)
+  - RxSwift (2.6.0)
+
+DEPENDENCIES:
+  - JLRoutes
+  - RxAlamofire
+  - RxBlocking
+  - RxCocoa
+  - RxOptional
+  - RxSwift
+
+SPEC CHECKSUMS:
+  Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
+  JLRoutes: 435d791422e96c9b9b5e1c4db1aedb3ae1b1a08f
+  RxAlamofire: b4572a077b6b2410c8732a27266299df4c00736e
+  RxBlocking: f2e0a7e74d5e9d3029d2b1118e2af01f583fbdd8
+  RxCocoa: 89ab00d5753502520227940e3a0e0a0413683c6b
+  RxOptional: b77fb47a0190213cf8a37c7a2b7fda28160b4563
+  RxSwift: 77f3a0b15324baa7a1c9bfa9f199648a82424e26
+
+PODFILE CHECKSUM: cc7f0245f4dda52074e225c9e0df1835743ddb8f
+
+COCOAPODS: 1.0.1
