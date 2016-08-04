@@ -20,6 +20,8 @@ protocol MVVMListPeopleViewModelProtocol: class {
     
     func removePersonByIndexPath(indexPath:NSIndexPath)
     
+    func nameAndAgeForIndexPath(indexPath:NSIndexPath) -> String
+    
     init()
 
 }
@@ -46,6 +48,11 @@ class MVVMListPeopleViewModel: MVVMListPeopleViewModelProtocol {
 //        let person = self.people![self.currentIndexPath.row]
 //        return person.nameAndAge
 //    }
+    
+    func nameAndAgeForIndexPath(indexPath:NSIndexPath) -> String {
+        let person = self.fetchPersonByIndexPath(indexPath)
+        return "-> \(person.name) (\(person.age))"
+    }
     
     func loadPeople() {
         AppDelegate.dataStore.fetch { (people) in

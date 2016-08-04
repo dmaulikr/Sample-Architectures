@@ -38,6 +38,7 @@
 		8E8676171D52FE7C00C73659 /* MVVM.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E8676151D52FE7C00C73659 /* MVVM.storyboard */; };
 		8E8676191D5300CE00C73659 /* BaseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8676181D5300CE00C73659 /* BaseListViewController.swift */; };
 		8E86761C1D53052B00C73659 /* ListPeopleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E86761B1D53052B00C73659 /* ListPeopleCell.swift */; };
+		8E86761F1D53170100C73659 /* Viper.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E86761D1D53170000C73659 /* Viper.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,7 @@
 		8E8676161D52FE7C00C73659 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Sample-Architectures/Base.lproj/MVVM.storyboard"; sourceTree = SOURCE_ROOT; };
 		8E8676181D5300CE00C73659 /* BaseListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseListViewController.swift; sourceTree = "<group>"; };
 		8E86761B1D53052B00C73659 /* ListPeopleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListPeopleCell.swift; path = "Sample-Architectures/CustomViews/ListPeopleCell.swift"; sourceTree = SOURCE_ROOT; };
+		8E86761E1D53170000C73659 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Sample-Architectures/Base.lproj/Viper.storyboard"; sourceTree = SOURCE_ROOT; };
 		8EFAAC161CB230D700108096 /* Sample-Architectures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample-Architectures.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D6D8855A38FF9BF2A08321E /* Pods_Sample_Architectures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sample_Architectures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B64D6DAC0B1250623F833AE7 /* Pods-Sample-Architectures.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample-Architectures.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sample-Architectures/Pods-Sample-Architectures.debug.xcconfig"; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 		8E8675DF1D52F8DF00C73659 /* Viper */ = {
 			isa = PBXGroup;
 			children = (
+				8E86761D1D53170000C73659 /* Viper.storyboard */,
 				8E8675E01D52F8DF00C73659 /* ListPeopleModule */,
 			);
 			name = Viper;
@@ -378,6 +381,7 @@
 				8E8676171D52FE7C00C73659 /* MVVM.storyboard in Resources */,
 				8E8676111D52FD3300C73659 /* RegularMVC.storyboard in Resources */,
 				8E86760F1D52FD2500C73659 /* Main.storyboard in Resources */,
+				8E86761F1D53170100C73659 /* Viper.storyboard in Resources */,
 				8E8675F41D52F8DF00C73659 /* Info.plist in Resources */,
 				8E8676141D52FD3900C73659 /* LaunchScreen.storyboard in Resources */,
 				8E8675F21D52F8DF00C73659 /* Assets.xcassets in Resources */,
@@ -491,6 +495,14 @@
 				8E8676161D52FE7C00C73659 /* Base */,
 			);
 			name = MVVM.storyboard;
+			sourceTree = "<group>";
+		};
+		8E86761D1D53170000C73659 /* Viper.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E86761E1D53170000C73659 /* Base */,
+			);
+			name = Viper.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

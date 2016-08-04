@@ -81,7 +81,12 @@ extension MVVMListPeopleViewController: UITableViewDelegate {
     
     func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         let cell = cell as! ListPeopleCell
-        cell.person = self.viewModel!.fetchPersonByIndexPath(indexPath)
+        //REFACTOR: Should probably not be dealing with the Person model here in the VienController
+        // VCs shouldn't know anything about models         
+        //cell.person = self.viewModel!.fetchPersonByIndexPath(indexPath)
+        
+        cell.textLabel!.text = self.viewModel!.nameAndAgeForIndexPath(indexPath)
+        
     }
 
 }
