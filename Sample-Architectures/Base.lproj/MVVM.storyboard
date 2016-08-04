@@ -9,7 +9,7 @@
         <!--Show Person View Controller-->
         <scene sceneID="NsS-8D-UNq">
             <objects>
-                <viewController storyboardIdentifier="MVCShowPersonViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gpn-NB-4xG" customClass="MVCShowPersonViewController" customModule="Sample_Architectures" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MVVMShowPersonViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gpn-NB-4xG" customClass="MVVMShowPersonViewController" customModule="Sample_Architectures" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wIW-Nx-EKi"/>
                         <viewControllerLayoutGuide type="bottom" id="AJe-l2-WBJ"/>
@@ -63,7 +63,7 @@
         <!--Add Person-->
         <scene sceneID="Mjg-Pd-H3u">
             <objects>
-                <viewController storyboardIdentifier="MVCAddPersonViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2Rt-Pp-ttd" customClass="MVCAddPersonViewController" customModule="Sample_Architectures" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="MVVMAddPersonViewController" storyboardIdentifier="MVVMAddPersonViewController" id="2Rt-Pp-ttd" customClass="MVVMAddPersonViewController" customModule="Sample_Architectures" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NP4-iE-lkJ"/>
                         <viewControllerLayoutGuide type="bottom" id="pBO-4Y-Krt"/>
@@ -126,7 +126,7 @@
         <!--List People View Controller-->
         <scene sceneID="rfy-Tv-tSo">
             <objects>
-                <viewController storyboardIdentifier="MVCListPeopleViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="l52-80-Ioc" customClass="MVCListPeopleViewController" customModule="Sample_Architectures" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MVVMListPeopleViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="l52-80-Ioc" customClass="MVVMListPeopleViewController" customModule="Sample_Architectures" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5F4-vq-NL8"/>
                         <viewControllerLayoutGuide type="bottom" id="cuE-hi-jFB"/>
@@ -161,8 +161,8 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="l52-80-Ioc" id="6Bn-zN-qeH"/>
-                                    <outlet property="delegate" destination="l52-80-Ioc" id="gP3-ZF-qwa"/>
+                                    <outlet property="dataSource" destination="l52-80-Ioc" id="8mS-i2-CCP"/>
+                                    <outlet property="delegate" destination="l52-80-Ioc" id="xqx-J7-Z1d"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -177,7 +177,7 @@
                     <navigationItem key="navigationItem" id="TYw-5H-8LN"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
-                        <outlet property="tableView" destination="KOM-vQ-avx" id="mGY-hg-Sak"/>
+                        <outlet property="tableView" destination="KOM-vQ-avx" id="sC4-4W-yId"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2nq-Nx-7v4" userLabel="First Responder" sceneMemberID="firstResponder"/>

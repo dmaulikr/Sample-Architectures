@@ -13,16 +13,15 @@
 		8E8675F31D52F8DF00C73659 /* MainMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675CB1D52F8DF00C73659 /* MainMenuTableViewController.swift */; };
 		8E8675F41D52F8DF00C73659 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E8675CC1D52F8DF00C73659 /* Info.plist */; };
 		8E8675F51D52F8DF00C73659 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675CE1D52F8DF00C73659 /* Person.swift */; };
-		8E8675F61D52F8DF00C73659 /* ListPeopleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675D01D52F8DF00C73659 /* ListPeopleCell.swift */; };
 		8E8675F71D52F8DF00C73659 /* MVCAddPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675D11D52F8DF00C73659 /* MVCAddPersonViewController.swift */; };
 		8E8675F81D52F8DF00C73659 /* MVCListPeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675D21D52F8DF00C73659 /* MVCListPeopleViewController.swift */; };
 		8E8675F91D52F8DF00C73659 /* MVCShowPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675D31D52F8DF00C73659 /* MVCShowPersonViewController.swift */; };
-		8E8675FA1D52F8DF00C73659 /* AddPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675D51D52F8DF00C73659 /* AddPersonViewController.swift */; };
-		8E8675FB1D52F8DF00C73659 /* AddPersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675D61D52F8DF00C73659 /* AddPersonViewModel.swift */; };
-		8E8675FC1D52F8DF00C73659 /* ListPeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675D71D52F8DF00C73659 /* ListPeopleViewController.swift */; };
-		8E8675FD1D52F8DF00C73659 /* ListPeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675D81D52F8DF00C73659 /* ListPeopleViewModel.swift */; };
-		8E8675FE1D52F8DF00C73659 /* ShowPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675D91D52F8DF00C73659 /* ShowPersonViewController.swift */; };
-		8E8675FF1D52F8DF00C73659 /* ShowPersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675DA1D52F8DF00C73659 /* ShowPersonViewModel.swift */; };
+		8E8675FA1D52F8DF00C73659 /* MVVMAddPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675D51D52F8DF00C73659 /* MVVMAddPersonViewController.swift */; };
+		8E8675FB1D52F8DF00C73659 /* MVVMAddPersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675D61D52F8DF00C73659 /* MVVMAddPersonViewModel.swift */; };
+		8E8675FC1D52F8DF00C73659 /* MVVMListPeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675D71D52F8DF00C73659 /* MVVMListPeopleViewController.swift */; };
+		8E8675FD1D52F8DF00C73659 /* MVVMListPeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675D81D52F8DF00C73659 /* MVVMListPeopleViewModel.swift */; };
+		8E8675FE1D52F8DF00C73659 /* MVVMShowPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675D91D52F8DF00C73659 /* MVVMShowPersonViewController.swift */; };
+		8E8675FF1D52F8DF00C73659 /* MVVMShowPersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675DA1D52F8DF00C73659 /* MVVMShowPersonViewModel.swift */; };
 		8E8676001D52F8DF00C73659 /* MemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675DD1D52F8DF00C73659 /* MemStore.swift */; };
 		8E8676011D52F8DF00C73659 /* StoreProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675DE1D52F8DF00C73659 /* StoreProtocol.swift */; };
 		8E8676021D52F8DF00C73659 /* ListPeopleModuleAPIDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675E31D52F8DF00C73659 /* ListPeopleModuleAPIDataManager.swift */; };
@@ -36,6 +35,9 @@
 		8E86760F1D52FD2500C73659 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E86760D1D52FD2500C73659 /* Main.storyboard */; };
 		8E8676111D52FD3300C73659 /* RegularMVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E8676101D52FD3300C73659 /* RegularMVC.storyboard */; };
 		8E8676141D52FD3900C73659 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E8676121D52FD3900C73659 /* LaunchScreen.storyboard */; };
+		8E8676171D52FE7C00C73659 /* MVVM.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E8676151D52FE7C00C73659 /* MVVM.storyboard */; };
+		8E8676191D5300CE00C73659 /* BaseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8676181D5300CE00C73659 /* BaseListViewController.swift */; };
+		8E86761C1D53052B00C73659 /* ListPeopleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E86761B1D53052B00C73659 /* ListPeopleCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,16 +47,15 @@
 		8E8675CB1D52F8DF00C73659 /* MainMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuTableViewController.swift; sourceTree = "<group>"; };
 		8E8675CC1D52F8DF00C73659 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Sample-Architectures/Info.plist"; sourceTree = SOURCE_ROOT; };
 		8E8675CE1D52F8DF00C73659 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		8E8675D01D52F8DF00C73659 /* ListPeopleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPeopleCell.swift; sourceTree = "<group>"; };
 		8E8675D11D52F8DF00C73659 /* MVCAddPersonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVCAddPersonViewController.swift; sourceTree = "<group>"; };
 		8E8675D21D52F8DF00C73659 /* MVCListPeopleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVCListPeopleViewController.swift; sourceTree = "<group>"; };
 		8E8675D31D52F8DF00C73659 /* MVCShowPersonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVCShowPersonViewController.swift; sourceTree = "<group>"; };
-		8E8675D51D52F8DF00C73659 /* AddPersonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPersonViewController.swift; sourceTree = "<group>"; };
-		8E8675D61D52F8DF00C73659 /* AddPersonViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPersonViewModel.swift; sourceTree = "<group>"; };
-		8E8675D71D52F8DF00C73659 /* ListPeopleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPeopleViewController.swift; sourceTree = "<group>"; };
-		8E8675D81D52F8DF00C73659 /* ListPeopleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPeopleViewModel.swift; sourceTree = "<group>"; };
-		8E8675D91D52F8DF00C73659 /* ShowPersonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowPersonViewController.swift; sourceTree = "<group>"; };
-		8E8675DA1D52F8DF00C73659 /* ShowPersonViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowPersonViewModel.swift; sourceTree = "<group>"; };
+		8E8675D51D52F8DF00C73659 /* MVVMAddPersonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVVMAddPersonViewController.swift; sourceTree = "<group>"; };
+		8E8675D61D52F8DF00C73659 /* MVVMAddPersonViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVVMAddPersonViewModel.swift; sourceTree = "<group>"; };
+		8E8675D71D52F8DF00C73659 /* MVVMListPeopleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVVMListPeopleViewController.swift; sourceTree = "<group>"; };
+		8E8675D81D52F8DF00C73659 /* MVVMListPeopleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVVMListPeopleViewModel.swift; sourceTree = "<group>"; };
+		8E8675D91D52F8DF00C73659 /* MVVMShowPersonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVVMShowPersonViewController.swift; sourceTree = "<group>"; };
+		8E8675DA1D52F8DF00C73659 /* MVVMShowPersonViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVVMShowPersonViewModel.swift; sourceTree = "<group>"; };
 		8E8675DD1D52F8DF00C73659 /* MemStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemStore.swift; sourceTree = "<group>"; };
 		8E8675DE1D52F8DF00C73659 /* StoreProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreProtocol.swift; sourceTree = "<group>"; };
 		8E8675E31D52F8DF00C73659 /* ListPeopleModuleAPIDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPeopleModuleAPIDataManager.swift; sourceTree = "<group>"; };
@@ -69,6 +70,9 @@
 		8E86760E1D52FD2500C73659 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Sample-Architectures/Base.lproj/Main.storyboard"; sourceTree = SOURCE_ROOT; };
 		8E8676101D52FD3300C73659 /* RegularMVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RegularMVC.storyboard; sourceTree = "<group>"; };
 		8E8676131D52FD3900C73659 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Sample-Architectures/Base.lproj/LaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
+		8E8676161D52FE7C00C73659 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Sample-Architectures/Base.lproj/MVVM.storyboard"; sourceTree = SOURCE_ROOT; };
+		8E8676181D5300CE00C73659 /* BaseListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseListViewController.swift; sourceTree = "<group>"; };
+		8E86761B1D53052B00C73659 /* ListPeopleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListPeopleCell.swift; path = "Sample-Architectures/CustomViews/ListPeopleCell.swift"; sourceTree = SOURCE_ROOT; };
 		8EFAAC161CB230D700108096 /* Sample-Architectures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample-Architectures.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D6D8855A38FF9BF2A08321E /* Pods_Sample_Architectures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sample_Architectures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B64D6DAC0B1250623F833AE7 /* Pods-Sample-Architectures.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample-Architectures.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sample-Architectures/Pods-Sample-Architectures.debug.xcconfig"; sourceTree = "<group>"; };
@@ -90,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				8E8675CB1D52F8DF00C73659 /* MainMenuTableViewController.swift */,
+				8E8676181D5300CE00C73659 /* BaseListViewController.swift */,
 			);
 			name = Controllers;
 			path = "Sample-Architectures/Controllers";
@@ -108,7 +113,6 @@
 			isa = PBXGroup;
 			children = (
 				8E8676101D52FD3300C73659 /* RegularMVC.storyboard */,
-				8E8675D01D52F8DF00C73659 /* ListPeopleCell.swift */,
 				8E8675D11D52F8DF00C73659 /* MVCAddPersonViewController.swift */,
 				8E8675D21D52F8DF00C73659 /* MVCListPeopleViewController.swift */,
 				8E8675D31D52F8DF00C73659 /* MVCShowPersonViewController.swift */,
@@ -120,12 +124,13 @@
 		8E8675D41D52F8DF00C73659 /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
-				8E8675D51D52F8DF00C73659 /* AddPersonViewController.swift */,
-				8E8675D61D52F8DF00C73659 /* AddPersonViewModel.swift */,
-				8E8675D71D52F8DF00C73659 /* ListPeopleViewController.swift */,
-				8E8675D81D52F8DF00C73659 /* ListPeopleViewModel.swift */,
-				8E8675D91D52F8DF00C73659 /* ShowPersonViewController.swift */,
-				8E8675DA1D52F8DF00C73659 /* ShowPersonViewModel.swift */,
+				8E8676151D52FE7C00C73659 /* MVVM.storyboard */,
+				8E8675D51D52F8DF00C73659 /* MVVMAddPersonViewController.swift */,
+				8E8675D61D52F8DF00C73659 /* MVVMAddPersonViewModel.swift */,
+				8E8675D71D52F8DF00C73659 /* MVVMListPeopleViewController.swift */,
+				8E8675D81D52F8DF00C73659 /* MVVMListPeopleViewModel.swift */,
+				8E8675D91D52F8DF00C73659 /* MVVMShowPersonViewController.swift */,
+				8E8675DA1D52F8DF00C73659 /* MVVMShowPersonViewModel.swift */,
 			);
 			name = MVVM;
 			path = "Sample-Architectures/MVVM";
@@ -249,6 +254,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8E86761A1D5304D300C73659 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				8E86761B1D53052B00C73659 /* ListPeopleCell.swift */,
+			);
+			name = CustomViews;
+			sourceTree = "<group>";
+		};
 		8EFAAC0D1CB230D700108096 = {
 			isa = PBXGroup;
 			children = (
@@ -273,6 +286,7 @@
 				8E8676121D52FD3900C73659 /* LaunchScreen.storyboard */,
 				8E86760D1D52FD2500C73659 /* Main.storyboard */,
 				8E8675C81D52F8DF00C73659 /* AppDelegate.swift */,
+				8E86761A1D5304D300C73659 /* CustomViews */,
 				8E8675CA1D52F8DF00C73659 /* Controllers */,
 				8E8675CD1D52F8DF00C73659 /* Models */,
 				8E86760A1D52F8ED00C73659 /* Architecutres */,
@@ -361,6 +375,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E8676171D52FE7C00C73659 /* MVVM.storyboard in Resources */,
 				8E8676111D52FD3300C73659 /* RegularMVC.storyboard in Resources */,
 				8E86760F1D52FD2500C73659 /* Main.storyboard in Resources */,
 				8E8675F41D52F8DF00C73659 /* Info.plist in Resources */,
@@ -424,29 +439,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E8675FF1D52F8DF00C73659 /* ShowPersonViewModel.swift in Sources */,
+				8E8675FF1D52F8DF00C73659 /* MVVMShowPersonViewModel.swift in Sources */,
 				8E8676001D52F8DF00C73659 /* MemStore.swift in Sources */,
 				8E8676051D52F8DF00C73659 /* ListPeopleModuleItem.swift in Sources */,
-				8E8675FE1D52F8DF00C73659 /* ShowPersonViewController.swift in Sources */,
+				8E8675FE1D52F8DF00C73659 /* MVVMShowPersonViewController.swift in Sources */,
 				8E8675F71D52F8DF00C73659 /* MVCAddPersonViewController.swift in Sources */,
 				8E8676061D52F8DF00C73659 /* ListPeopleModulePresenter.swift in Sources */,
 				8E8675F91D52F8DF00C73659 /* MVCShowPersonViewController.swift in Sources */,
 				8E8676031D52F8DF00C73659 /* ListPeopleModuleLocalDataManager.swift in Sources */,
+				8E86761C1D53052B00C73659 /* ListPeopleCell.swift in Sources */,
 				8E8676021D52F8DF00C73659 /* ListPeopleModuleAPIDataManager.swift in Sources */,
-				8E8675F61D52F8DF00C73659 /* ListPeopleCell.swift in Sources */,
 				8E8676071D52F8DF00C73659 /* ListPeopleModuleProtocols.swift in Sources */,
-				8E8675FC1D52F8DF00C73659 /* ListPeopleViewController.swift in Sources */,
+				8E8675FC1D52F8DF00C73659 /* MVVMListPeopleViewController.swift in Sources */,
 				8E8675F51D52F8DF00C73659 /* Person.swift in Sources */,
+				8E8676191D5300CE00C73659 /* BaseListViewController.swift in Sources */,
 				8E8676041D52F8DF00C73659 /* ListPeopleModuleInteractor.swift in Sources */,
 				8E8675F11D52F8DF00C73659 /* AppDelegate.swift in Sources */,
 				8E8676081D52F8DF00C73659 /* ListPeopleModuleView.swift in Sources */,
 				8E8675F81D52F8DF00C73659 /* MVCListPeopleViewController.swift in Sources */,
-				8E8675FB1D52F8DF00C73659 /* AddPersonViewModel.swift in Sources */,
+				8E8675FB1D52F8DF00C73659 /* MVVMAddPersonViewModel.swift in Sources */,
 				8E8676011D52F8DF00C73659 /* StoreProtocol.swift in Sources */,
 				8E8676091D52F8DF00C73659 /* ListPeopleModuleWireFrame.swift in Sources */,
 				8E8675F31D52F8DF00C73659 /* MainMenuTableViewController.swift in Sources */,
-				8E8675FD1D52F8DF00C73659 /* ListPeopleViewModel.swift in Sources */,
-				8E8675FA1D52F8DF00C73659 /* AddPersonViewController.swift in Sources */,
+				8E8675FD1D52F8DF00C73659 /* MVVMListPeopleViewModel.swift in Sources */,
+				8E8675FA1D52F8DF00C73659 /* MVVMAddPersonViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +483,14 @@
 				8E8676131D52FD3900C73659 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8E8676151D52FE7C00C73659 /* MVVM.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E8676161D52FE7C00C73659 /* Base */,
+			);
+			name = MVVM.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

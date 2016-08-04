@@ -8,29 +8,32 @@
 
 import UIKit
 
-class AddPersonViewController: UIViewController {
+protocol MVVMAddPersonDelegate {
+    
+    func didFinishCreatingPerson(person:Person)
+    
+}
+
+class MVVMAddPersonViewController: UIViewController {
 
     @IBOutlet private weak var nameTextField:UITextField!
     @IBOutlet private weak var emailTextField:UITextField!
     @IBOutlet private weak var ageTextField:UITextField!
     
-    var viewModel:AddPersonViewModel?
+    var delegate:MVVMAddPersonDelegate?
+    var viewModel:MVVMAddPersonViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.viewModel = AddPersonViewModel()
+        self.viewModel = MVVMAddPersonViewModel()
         
         self.viewModel?.didCreatePerson = { person in
+            self.delegate?.didFinishCreatingPerson(person)
             self.dismissViewControllerAnimated(true, completion: nil)
-        }
-        
+        }        
     }
     
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-    }
-
     @IBAction func didTapDoneButton(sender:AnyObject) {
         
         let person = Person(

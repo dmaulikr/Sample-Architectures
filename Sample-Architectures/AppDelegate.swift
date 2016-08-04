@@ -38,10 +38,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             if let person = person {
                 
-                let viewModel = ShowPersonViewModel()
+                let viewModel = MVVMShowPersonViewModel(person: person)
                 viewModel.person = person
                 
-                let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("ShowPersonViewController") as! ShowPersonViewController
+                let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("MVVMShowPersonViewController") as! MVVMShowPersonViewController
                 viewController.viewModel = viewModel
                 
                 let currentNavigationController = self.window!.rootViewController! as! UINavigationController

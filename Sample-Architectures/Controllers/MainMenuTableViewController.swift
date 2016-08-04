@@ -26,7 +26,7 @@ enum MenuOptions:Int {
     var rootViewControllerName:String {
         switch self {
         case .MVC: return "MVCListPeopleViewController"
-        case .MVVM: return "MVVM"
+        case .MVVM: return "MVVMListPeopleViewController"
         case .Viper: return "Viper"
         case .PureMVC: return "PureMVC"
         }
@@ -46,6 +46,7 @@ class MainMenuTableViewController: UITableViewController {
         let menuOption = MenuOptions(rawValue: indexPath.row)
         
         let storyboard = UIStoryboard(name: menuOption!.storyboardName, bundle: NSBundle.mainBundle())
+        
         let viewController = storyboard.instantiateViewControllerWithIdentifier(menuOption!.rootViewControllerName)
         
         self.navigationController?.pushViewController(viewController, animated: true)

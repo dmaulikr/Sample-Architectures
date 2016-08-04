@@ -8,18 +8,25 @@
 
 import UIKit
 
-class ShowPersonViewController: UIViewController {
+class MVVMShowPersonViewController: UIViewController {
     
     @IBOutlet private weak var nameLabel:UILabel!
     @IBOutlet private weak var emailLabel:UILabel!
     @IBOutlet private weak var ageLabel:UILabel!
 
-    var viewModel:ShowPersonViewModel?
+    var viewModel:MVVMShowPersonViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
-
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.nameLabel.text = self.viewModel!.nameText
+        self.emailLabel.text = self.viewModel!.emailText
+        self.ageLabel.text = self.viewModel!.ageText
+        
+    }
 
 }

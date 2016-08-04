@@ -8,9 +8,7 @@
 
 import Foundation
 
-protocol AddPersonViewModelProtocol {
-    
-    var person:Person? { get }
+protocol MVVMAddPersonViewModelProtocol {
     
     func createPerson(person:Person)
     
@@ -18,10 +16,8 @@ protocol AddPersonViewModelProtocol {
     
 }
 
-class AddPersonViewModel: AddPersonViewModelProtocol {
+class MVVMAddPersonViewModel: MVVMAddPersonViewModelProtocol {
 
-    var person:Person?
-    
     var didCreatePerson:((Person) -> Void)?
     
     func createPerson(person:Person) {
@@ -35,5 +31,5 @@ class AddPersonViewModel: AddPersonViewModelProtocol {
         }
         
     }
-
+    
 }

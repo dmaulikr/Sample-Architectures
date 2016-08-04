@@ -8,13 +8,7 @@
 
 import UIKit
 
-private extension Selector {
-    
-    static let DidTapAddButton = #selector(MVCListPeopleViewController.didTapAddButton(_:))
-    
-}
-
-class MVCListPeopleViewController: UIViewController {
+class MVCListPeopleViewController: BaseListViewController {
     
     @IBOutlet weak var tableView:UITableView!
     
@@ -28,10 +22,6 @@ class MVCListPeopleViewController: UIViewController {
         super.viewDidLoad()
         self.title = "Regular MVC"
         
-        let addBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: .DidTapAddButton)
-        
-        self.navigationItem.rightBarButtonItems = [addBarButtonItem,self.editButtonItem()]
-        
         self.loadData()
     }
     
@@ -41,13 +31,6 @@ class MVCListPeopleViewController: UIViewController {
         viewController.person = cell.person
     }
     
-    func didTapAddButton(sender: AnyObject) {
-        let storyboard = UIStoryboard(name: "RegularMVC", bundle: NSBundle.mainBundle())
-        let navigationViewController = storyboard.instantiateViewControllerWithIdentifier("AddPersonNavigationController")
-        let addPersonViewController = navigationViewController.childViewControllers.first as! MVCAddPersonViewController
-        addPersonViewController.delegate = self
-        self.presentViewController(navigationViewController, animated: true, completion: nil)
-    }
     
     override func setEditing(editing: Bool, animated: Bool) {
         super.setEditing(editing, animated: animated)
@@ -58,6 +41,14 @@ class MVCListPeopleViewController: UIViewController {
         AppDelegate.dataStore.fetch({ people in
             self.people = people
         })
+    }
+    
+    override func prepareAddViewController() -> UIViewController? {
+        let storyboard = UIStoryboard(name: "RegularMVC", bundle: NSBundle.mainBundle())
+        let navigationViewController = storyboard.instantiateViewControllerWithIdentifier("AddPersonNavigationController")
+        let addPersonViewController = navigationViewController.childViewControllers.first as! MVCAddPersonViewController
+        addPersonViewController.delegate = self
+        return navigationViewController
     }
     
 }
