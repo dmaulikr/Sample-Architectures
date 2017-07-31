@@ -4,14 +4,59 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Sample-MVC.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
 		<key>Sample-MVVM.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>1</integer>
+		</dict>
+		<key>Sample-PureMVC.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Sample-Viper.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>77472D3D1DF6CE8600B1ED7B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7758FB841DF59E0700BF2EBC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7758FB921DF59F6E00BF2EBC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7758FBA61DF6515A00BF2EBC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7758FBD31DF6579000BF2EBC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>77B0CC871F28DAF0008ED85D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>8EFAAC151CB230D700108096</key>
 		<dict>
 			<key>primary</key>

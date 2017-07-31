@@ -12,50 +12,50 @@ class MemStore<T:Equatable>: StoreProtocol {
     
     typealias Element = T
     
-    private var elements:[Element] = []
+    fileprivate var elements:[Element] = []
     
     convenience init(elements:[Element]) {
         self.init()
         self.elements = elements
     }
     
-    func fetch(completionHandler: [Element] -> Void) {
+    func fetch(_ completionHandler: ([Element]) -> Void) {
         
         completionHandler(self.elements)
         
     }
     
-    func create(person: Element, completionHandler: () -> Void) throws -> Void {
+    func create(_ person: Element, completionHandler: () -> Void) throws -> Void {
         
         self.elements.append(person)
         completionHandler()
         
     }
     
-    func update(element: Element, completionHandler: () -> Void) throws -> Void  {
+    func update(_ element: Element, completionHandler: () -> Void) throws -> Void  {
         
-        let index = self.elements.indexOf { (p) -> Bool in
+        let index = self.elements.index { (p) -> Bool in
             return p == element
         }
         if let index = index {
             self.elements[index] = element
             completionHandler()
         } else {
-            throw StoreError.CannotUpdate("Cannot update!!!")
+            throw StoreError.cannotUpdate("Cannot update!!!")
         }
     
     }
     
-    func delete(element: Element, completionHandler: () -> Void) throws -> Void {
+    func delete(_ element: Element, completionHandler: () -> Void) throws -> Void {
         
-        let index = self.elements.indexOf { (p) -> Bool in
+        let index = self.elements.index { (p) -> Bool in
             return p == element
         }
         if let index = index {
-            self.elements.removeAtIndex(index)
+            self.elements.remove(at: index)
             completionHandler()
         } else {
-            throw StoreError.CannotDelete("Cannot delete")
+            throw StoreError.cannotDelete("Cannot delete")
         }
         
     }

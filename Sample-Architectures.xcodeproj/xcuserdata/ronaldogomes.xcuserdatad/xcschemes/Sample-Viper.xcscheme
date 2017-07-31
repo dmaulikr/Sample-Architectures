@@ -5,22 +5,6 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
-      <BuildActionEntries>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7758FBD31DF6579000BF2EBC"
-               BuildableName = "Sample-Architectures-MVVM.app"
-               BlueprintName = "Sample-Architectures-MVVM"
-               ReferencedContainer = "container:Sample-Architectures.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -52,9 +36,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7758FBD31DF6579000BF2EBC"
-            BuildableName = "Sample-Architectures-MVVM.app"
-            BlueprintName = "Sample-Architectures-MVVM"
+            BlueprintIdentifier = "77472D3D1DF6CE8600B1ED7B"
+            BuildableName = "Sample-Architectures-Viper.app"
+            BlueprintName = "Sample-Architectures-Viper"
             ReferencedContainer = "container:Sample-Architectures.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -75,16 +59,16 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7758FBD31DF6579000BF2EBC"
-            BuildableName = "Sample-Architectures-MVVM.app"
-            BlueprintName = "Sample-Architectures-MVVM"
+            BlueprintIdentifier = "77472D3D1DF6CE8600B1ED7B"
+            BuildableName = "Sample-Architectures-Viper.app"
+            BlueprintName = "Sample-Architectures-Viper"
             ReferencedContainer = "container:Sample-Architectures.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <EnvironmentVariables>
          <EnvironmentVariable
             key = "Architecture"
-            value = "MVVM"
+            value = "Viper"
             isEnabled = "YES">
          </EnvironmentVariable>
       </EnvironmentVariables>
@@ -101,9 +85,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7758FBD31DF6579000BF2EBC"
-            BuildableName = "Sample-Architectures-MVVM.app"
-            BlueprintName = "Sample-Architectures-MVVM"
+            BlueprintIdentifier = "77472D3D1DF6CE8600B1ED7B"
+            BuildableName = "Sample-Architectures-Viper.app"
+            BlueprintName = "Sample-Architectures-Viper"
             ReferencedContainer = "container:Sample-Architectures.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7758FBD31DF6579000BF2EBC"
-               BuildableName = "Sample-Architectures-MVVM.app"
-               BlueprintName = "Sample-Architectures-MVVM"
-               ReferencedContainer = "container:Sample-Architectures.xcodeproj">
+               BlueprintIdentifier = "8EFAAC151CB230D700108096"
+               BuildableName = "Sample-MVVM.app"
+               BlueprintName = "Sample-MVVM"
+               ReferencedContainer = "container:Sample-MVVM.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -52,9 +52,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7758FBD31DF6579000BF2EBC"
-            BuildableName = "Sample-Architectures-MVVM.app"
-            BlueprintName = "Sample-Architectures-MVVM"
+            BlueprintIdentifier = "8EFAAC151CB230D700108096"
+            BuildableName = "Sample-Architectures.app"
+            BlueprintName = "Sample-Architectures"
             ReferencedContainer = "container:Sample-Architectures.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -75,16 +75,16 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7758FBD31DF6579000BF2EBC"
-            BuildableName = "Sample-Architectures-MVVM.app"
-            BlueprintName = "Sample-Architectures-MVVM"
+            BlueprintIdentifier = "8EFAAC151CB230D700108096"
+            BuildableName = "Sample-Architectures.app"
+            BlueprintName = "Sample-Architectures"
             ReferencedContainer = "container:Sample-Architectures.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <EnvironmentVariables>
          <EnvironmentVariable
             key = "Architecture"
-            value = "MVVM"
+            value = "PureMVC"
             isEnabled = "YES">
          </EnvironmentVariable>
       </EnvironmentVariables>
@@ -101,10 +101,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7758FBD31DF6579000BF2EBC"
-            BuildableName = "Sample-Architectures-MVVM.app"
-            BlueprintName = "Sample-Architectures-MVVM"
-            ReferencedContainer = "container:Sample-Architectures.xcodeproj">
+            BlueprintIdentifier = "8EFAAC151CB230D700108096"
+            BuildableName = "Sample-MVVM.app"
+            BlueprintName = "Sample-MVVM"
+            ReferencedContainer = "container:Sample-MVVM.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

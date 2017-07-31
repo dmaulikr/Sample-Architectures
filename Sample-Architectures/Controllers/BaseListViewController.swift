@@ -10,8 +10,6 @@ import UIKit
 
 private extension Selector {
     
-    static let DidTapAddButton = #selector(BaseListViewController.didTapAddButton(_:))
-    
 }
 
 class BaseListViewController: UIViewController {
@@ -19,16 +17,7 @@ class BaseListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let addBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: .DidTapAddButton)
-        
-        self.navigationItem.rightBarButtonItems = [addBarButtonItem,self.editButtonItem()]
-        
-    }
-
-    func didTapAddButton(sender: AnyObject) {
-        if let viewController = self.prepareAddViewController() {
-            self.presentViewController(viewController, animated: true, completion: nil)
-        }
+        self.navigationItem.rightBarButtonItems?.append(self.editButtonItem)
     }
 
 }

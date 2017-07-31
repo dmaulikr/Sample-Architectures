@@ -1,37 +1,55 @@
 PODS:
-  - Alamofire (3.4.1)
-  - JLRoutes (1.6)
-  - RxAlamofire (2.5):
-    - RxAlamofire/Core (= 2.5)
-  - RxAlamofire/Core (2.5):
-    - Alamofire (~> 3.4)
-    - RxSwift (~> 2.5)
-  - RxBlocking (2.6.0):
-    - RxSwift (~> 2.5)
-  - RxCocoa (2.6.0):
-    - RxSwift (~> 2.5)
-  - RxOptional (2.0.0):
-    - RxCocoa (~> 2.0)
-    - RxSwift (~> 2.0)
-  - RxSwift (2.6.0)
+  - Alamofire (4.2.0)
+  - JLRoutes (2.0.1)
+  - KIF (3.5.1):
+    - KIF/Core (= 3.5.1)
+  - KIF/Core (3.5.1)
+  - Nimble (5.1.1)
+  - PKHUD (4.2.3)
+  - Quick (1.0.0)
+  - RxAlamofire (3.0.2):
+    - RxAlamofire/Core (= 3.0.2)
+  - RxAlamofire/Core (3.0.2):
+    - Alamofire (~> 4.0)
+    - RxSwift (~> 3.0)
+  - RxBlocking (3.0.1):
+    - RxSwift (~> 3.0)
+  - RxCocoa (3.0.1):
+    - RxSwift (~> 3.0)
+  - RxOptional (3.1.3):
+    - RxCocoa
+    - RxSwift
+  - RxSwift (3.0.1)
+  - SnapKit (3.0.2)
 
 DEPENDENCIES:
+  - Alamofire (~> 4.2)
   - JLRoutes
+  - KIF (~> 3.0)
+  - Nimble (~> 5.1)
+  - PKHUD (~> 4.0)
+  - Quick (~> 1.0)
   - RxAlamofire
   - RxBlocking
   - RxCocoa
   - RxOptional
   - RxSwift
+  - SnapKit (~> 3.0)
 
 SPEC CHECKSUMS:
-  Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
-  JLRoutes: 435d791422e96c9b9b5e1c4db1aedb3ae1b1a08f
-  RxAlamofire: b4572a077b6b2410c8732a27266299df4c00736e
-  RxBlocking: f2e0a7e74d5e9d3029d2b1118e2af01f583fbdd8
-  RxCocoa: 89ab00d5753502520227940e3a0e0a0413683c6b
-  RxOptional: b77fb47a0190213cf8a37c7a2b7fda28160b4563
-  RxSwift: 77f3a0b15324baa7a1c9bfa9f199648a82424e26
+  Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
+  JLRoutes: 3652abe3b4ac51bc93ec3a371353d762e8566092
+  KIF: 082eb65279e51c3092923802849eb796a04982ab
+  Nimble: 415e3aa3267e7bc2c96b05fa814ddea7bb686a29
+  PKHUD: c7692163a09875cbf15827dc581df3c5cf7f1015
+  Quick: 8024e4a47e6cc03a9d5245ef0948264fc6d27cff
+  RxAlamofire: bc53604b29fd2d220cfaa490c736cc4500819f34
+  RxBlocking: 5de082d09d1ab45b49173f309f1a97d6b50f34c4
+  RxCocoa: 15a52fc590dcc700cb4a690a633b5c5184ce3a78
+  RxOptional: b97b59183af80d1e729ac9e51d09a10be668d6a8
+  RxSwift: af5680055c4ad04480189c52d28385b1029493a6
+  SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
 
-PODFILE CHECKSUM: cc7f0245f4dda52074e225c9e0df1835743ddb8f
+PODFILE CHECKSUM: 3028c5c9d0a1398e703a52a73f4a3d12c7e0fc46
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.1.1

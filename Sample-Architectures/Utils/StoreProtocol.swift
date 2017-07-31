@@ -31,11 +31,11 @@ protocol StoreProtocol
     
     // MARK: CRUD operations - Inner closure
     
-    func fetch(completionHandler: [Element] -> Void)
+    func fetch(_ completionHandler: ([Element]) -> Void)
 //    func fetch(id: String, completionHandler: Element? -> Void)
-    func create(element: Element, completionHandler: () -> Void) throws -> Void
-    func update(element: Element, completionHandler: () -> Void) throws -> Void
-    func delete(element: Element, completionHandler: () -> Void) throws -> Void
+    func create(_ element: Element, completionHandler: () -> Void) throws -> Void
+    func update(_ element: Element, completionHandler: () -> Void) throws -> Void
+    func delete(_ element: Element, completionHandler: () -> Void) throws -> Void
 }
 
 //typealias PeopleStoreFetchOrdersCompletionHandler = (result: PeopleStoreResult<[Element]>) -> Void
@@ -46,18 +46,18 @@ protocol StoreProtocol
 
 enum StoreResult<U>
 {
-    case Success(result: U)
-    case Failure(error: StoreError)
+    case success(result: U)
+    case failure(error: StoreError)
 }
 
 // MARK: - Orders store CRUD operation errors
 //Equatable
-enum StoreError: ErrorType
+enum StoreError: Error
 {
-    case CannotFetch(String)
-    case CannotCreate(String)
-    case CannotUpdate(String)
-    case CannotDelete(String)
+    case cannotFetch(String)
+    case cannotCreate(String)
+    case cannotUpdate(String)
+    case cannotDelete(String)
 }
 
 //func ==(lhs: StoreResult<U>, rhs: StoreResult<U>) -> Bool
