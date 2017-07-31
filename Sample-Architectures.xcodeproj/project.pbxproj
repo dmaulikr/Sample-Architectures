@@ -143,10 +143,10 @@
 		7758FBFC1DF6579100BF2EBC /* Sample-Architectures-MVVM.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Sample-Architectures-MVVM.plist"; path = "/Users/ronaldogomes/Documents/projects/iphone/samples/Sample-Architectures/Sample-Architectures-MVVM.plist"; sourceTree = "<absolute>"; };
 		77B0CC9F1F28DAF0008ED85D /* Sample-Architectures-PureMVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample-Architectures-PureMVC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77B0CCA01F28DAF0008ED85D /* Sample-Architectures-PureMVC.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Sample-Architectures-PureMVC.plist"; path = "/Users/ronaldogomes/Documents/projects/iphone/samples/Sample-Architectures/Sample-Architectures-PureMVC.plist"; sourceTree = "<absolute>"; };
-		77B0CCAB1F2F8A6F008ED85D /* PersonDetailProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailProtocols.swift; sourceTree = SOURCE_ROOT; };
-		77B0CCAD1F2F8E54008ED85D /* PersonDetailWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailWireFrame.swift; sourceTree = SOURCE_ROOT; };
-		77B0CCAF1F2F908A008ED85D /* ShowPersonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowPersonViewController.swift; sourceTree = SOURCE_ROOT; };
-		77B0CCB11F2F96AB008ED85D /* PersonDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailPresenter.swift; sourceTree = SOURCE_ROOT; };
+		77B0CCAB1F2F8A6F008ED85D /* PersonDetailProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailProtocols.swift; sourceTree = "<group>"; };
+		77B0CCAD1F2F8E54008ED85D /* PersonDetailWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailWireFrame.swift; sourceTree = "<group>"; };
+		77B0CCAF1F2F908A008ED85D /* ShowPersonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowPersonViewController.swift; sourceTree = "<group>"; };
+		77B0CCB11F2F96AB008ED85D /* PersonDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailPresenter.swift; sourceTree = "<group>"; };
 		77B0CCB71F2FA58C008ED85D /* ListPeopleWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPeopleWireFrame.swift; sourceTree = "<group>"; };
 		865971D0D5A28A3D1346E4FB /* Pods-Sample-ArchitecturesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample-ArchitecturesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sample-ArchitecturesTests/Pods-Sample-ArchitecturesTests.release.xcconfig"; sourceTree = "<group>"; };
 		8E8675C81D52F8DF00C73659 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -335,8 +335,8 @@
 		77B0CCA61F2F89DE008ED85D /* PersonDetail */ = {
 			isa = PBXGroup;
 			children = (
-				77B0CCAA1F2F8A39008ED85D /* Protocols */,
 				77B0CCA91F2F8A28008ED85D /* Presenter */,
+				77B0CCAA1F2F8A39008ED85D /* Protocols */,
 				77B0CCA81F2F8A21008ED85D /* View */,
 				77B0CCA71F2F8A18008ED85D /* WireFrame */,
 			);
@@ -349,6 +349,7 @@
 				77B0CCAD1F2F8E54008ED85D /* PersonDetailWireFrame.swift */,
 			);
 			name = WireFrame;
+			path = WireFrame;
 			sourceTree = "<group>";
 		};
 		77B0CCA81F2F8A21008ED85D /* View */ = {
@@ -357,6 +358,7 @@
 				77B0CCAF1F2F908A008ED85D /* ShowPersonViewController.swift */,
 			);
 			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		77B0CCA91F2F8A28008ED85D /* Presenter */ = {
@@ -365,6 +367,7 @@
 				77B0CCB11F2F96AB008ED85D /* PersonDetailPresenter.swift */,
 			);
 			name = Presenter;
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		77B0CCAA1F2F8A39008ED85D /* Protocols */ = {
@@ -373,6 +376,7 @@
 				77B0CCAB1F2F8A6F008ED85D /* PersonDetailProtocols.swift */,
 			);
 			name = Protocols;
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		8E8675CA1D52F8DF00C73659 /* Controllers */ = {
@@ -413,9 +417,9 @@
 		8E8675DC1D52F8DF00C73659 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				77B0CCB71F2FA58C008ED85D /* ListPeopleWireFrame.swift */,
 				8E8675DD1D52F8DF00C73659 /* MemStore.swift */,
 				8E8675DE1D52F8DF00C73659 /* StoreProtocol.swift */,
-				77B0CCB71F2FA58C008ED85D /* ListPeopleWireFrame.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
