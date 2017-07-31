@@ -85,6 +85,8 @@
 		77B0CCB41F2F9B02008ED85D /* ShowPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B0CCAF1F2F908A008ED85D /* ShowPersonViewController.swift */; };
 		77B0CCB51F2F9B06008ED85D /* PersonDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B0CCB11F2F96AB008ED85D /* PersonDetailPresenter.swift */; };
 		77B0CCB61F2F9B0A008ED85D /* PersonDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B0CCAB1F2F8A6F008ED85D /* PersonDetailProtocols.swift */; };
+		77B0CCB91F2FA5BE008ED85D /* ListPeopleWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B0CCB71F2FA58C008ED85D /* ListPeopleWireFrame.swift */; };
+		77B0CCBA1F2FA5BF008ED85D /* ListPeopleWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B0CCB71F2FA58C008ED85D /* ListPeopleWireFrame.swift */; };
 		9931A41DE577095275D5202E /* Pods_Sample_Architectures_MVC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0B2D65FB8392BD0C8129F8 /* Pods_Sample_Architectures_MVC.framework */; };
 		AB505B42FDE950D318E7FE37 /* Pods_Acceptance_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28EB5A14BC8F98ABA816BC4F /* Pods_Acceptance_Tests.framework */; };
 		D1EB49BBD09918DEE72E5A87 /* Pods_Sample_ArchitecturesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5501017CF10AFFBACD97B2DF /* Pods_Sample_ArchitecturesTests.framework */; };
@@ -145,6 +147,7 @@
 		77B0CCAD1F2F8E54008ED85D /* PersonDetailWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailWireFrame.swift; sourceTree = SOURCE_ROOT; };
 		77B0CCAF1F2F908A008ED85D /* ShowPersonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowPersonViewController.swift; sourceTree = SOURCE_ROOT; };
 		77B0CCB11F2F96AB008ED85D /* PersonDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailPresenter.swift; sourceTree = SOURCE_ROOT; };
+		77B0CCB71F2FA58C008ED85D /* ListPeopleWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPeopleWireFrame.swift; sourceTree = "<group>"; };
 		865971D0D5A28A3D1346E4FB /* Pods-Sample-ArchitecturesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample-ArchitecturesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sample-ArchitecturesTests/Pods-Sample-ArchitecturesTests.release.xcconfig"; sourceTree = "<group>"; };
 		8E8675C81D52F8DF00C73659 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E8675C91D52F8DF00C73659 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -412,6 +415,7 @@
 			children = (
 				8E8675DD1D52F8DF00C73659 /* MemStore.swift */,
 				8E8675DE1D52F8DF00C73659 /* StoreProtocol.swift */,
+				77B0CCB71F2FA58C008ED85D /* ListPeopleWireFrame.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -1143,6 +1147,7 @@
 				7758FBB81DF6515A00BF2EBC /* AppDelegate.swift in Sources */,
 				7758FBBA1DF6515A00BF2EBC /* ListPeopleViewController.swift in Sources */,
 				7758FBBC1DF6515A00BF2EBC /* StoreProtocol.swift in Sources */,
+				77B0CCB91F2FA5BE008ED85D /* ListPeopleWireFrame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1159,6 +1164,7 @@
 				7758FBE51DF6579000BF2EBC /* AppDelegate.swift in Sources */,
 				7758FBE81DF6579000BF2EBC /* AddPersonViewModel.swift in Sources */,
 				7758FBE91DF6579000BF2EBC /* StoreProtocol.swift in Sources */,
+				77B0CCBA1F2FA5BF008ED85D /* ListPeopleWireFrame.swift in Sources */,
 				77472D651DF6D04D00B1ED7B /* ListPeopleViewController.swift in Sources */,
 				7758FBEC1DF6579000BF2EBC /* ListPeopleViewModel.swift in Sources */,
 				77472D641DF6D04D00B1ED7B /* AddPersonViewController.swift in Sources */,

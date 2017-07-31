@@ -19,6 +19,7 @@ class ListPeopleViewController: BaseListViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Viper"
         self.presenter?.viewDidLoad()
     }
     
