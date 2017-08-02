@@ -6,6 +6,8 @@
 import Foundation
 import UIKit
 
+//Mark: ViewController
+
 protocol ListPeopleViewProtocol: class {
     var presenter: ListPeoplePresenterProtocol? { get set }
     
@@ -15,10 +17,15 @@ protocol ListPeopleViewProtocol: class {
     func showPeople(_ people: [Person])
 }
 
+//Mark: Wireframe
+
 protocol ListPeopleWireFrameProtocol: class {
     func presentPersonDetailScreen(from view: ListPeopleViewProtocol, for person: Person, to segue: UIStoryboardSegue)
+    func presentAddPersonFormScreen(from view: ListPeopleViewProtocol, to segue: UIStoryboardSegue)
     static func createListPeople() -> UIViewController
 }
+
+//Mark: Presenter
 
 protocol ListPeoplePresenterProtocol: class {
     var view: ListPeopleViewProtocol? { get set }
@@ -26,7 +33,9 @@ protocol ListPeoplePresenterProtocol: class {
     var wireFrame: ListPeopleWireFrameProtocol? { get set }
     
     func viewDidLoad()
+    func viewWillAppear()
     func showPersonDetail(for person:Person, to segue:UIStoryboardSegue)
+    func showAddPersonForm(to segue:UIStoryboardSegue)
     
 }
 
@@ -39,9 +48,11 @@ protocol ListPeopleInteractorOutputProtocol: class {
     */
 }
 
+//MARK: Interactor
+
 protocol ListPeopleInteractorInputProtocol: class {
     var presenter: ListPeopleInteractorOutputProtocol? { get set }
-    var APIDataManager: ListPeopleAPIDataManagerInputProtocol? { get set }
+    var APIDataManager: ListPeopleRemoteDataManagerInputProtocol? { get set }
     var localDatamanager: ListPeopleLocalDataManagerInputProtocol? { get set }
     /**
     * Add here your methods for communication PRESENTER -> INTERACTOR
@@ -56,11 +67,13 @@ protocol ListPeopleInteractorInputProtocol: class {
 //}
 
 protocol ListPeopleRemoteDataManagerOutputProtocol: class {
-    func onPeopleRetrieved(_ posts: [Person])
+    func onRetrievePeople(_ posts: [Person])
     func onError()
 }
 
-protocol ListPeopleAPIDataManagerInputProtocol: class {
+//Mark: DataManager
+
+protocol ListPeopleRemoteDataManagerInputProtocol: class {
     var remoteRequestHandler: ListPeopleRemoteDataManagerOutputProtocol? { get set }
     
     func retrivePeopleList()

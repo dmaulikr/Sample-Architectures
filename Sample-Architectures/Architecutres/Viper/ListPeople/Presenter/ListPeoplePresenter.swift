@@ -14,12 +14,19 @@ class ListPeoplePresenter: ListPeoplePresenterProtocol {
     init() {}
     
     func viewDidLoad() {
+    }
+    
+    func viewWillAppear() {
         self.view?.showLoading()
         self.interactor?.fetchPeole()
     }
     
     func showPersonDetail(for person:Person, to segue:UIStoryboardSegue) {
         self.wireFrame?.presentPersonDetailScreen(from: self.view!, for: person, to: segue)
+    }
+    
+    func showAddPersonForm(to segue:UIStoryboardSegue) {
+        self.wireFrame?.presentAddPersonFormScreen(from: self.view!, to: segue)
     }
     
 }

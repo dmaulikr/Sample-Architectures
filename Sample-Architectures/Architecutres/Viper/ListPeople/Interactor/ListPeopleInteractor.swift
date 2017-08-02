@@ -8,7 +8,7 @@ import Foundation
 class ListPeopleInteractor: ListPeopleInteractorInputProtocol {
     
     weak var presenter: ListPeopleInteractorOutputProtocol?
-    var APIDataManager: ListPeopleAPIDataManagerInputProtocol?
+    var APIDataManager: ListPeopleRemoteDataManagerInputProtocol?
     var localDatamanager: ListPeopleLocalDataManagerInputProtocol?
     
     init() {}
@@ -21,7 +21,7 @@ class ListPeopleInteractor: ListPeopleInteractorInputProtocol {
 
 extension ListPeopleInteractor: ListPeopleRemoteDataManagerOutputProtocol {
     
-    func onPeopleRetrieved(_ people: [Person]) {
+    func onRetrievePeople(_ people: [Person]) {
         
         self.presenter?.didRetrivePeople(people)
         

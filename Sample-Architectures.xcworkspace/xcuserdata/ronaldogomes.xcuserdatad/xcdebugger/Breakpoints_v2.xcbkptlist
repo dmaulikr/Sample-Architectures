@@ -9,13 +9,45 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Sample-Architectures/AppDelegate.swift"
-            timestampString = "523215798.272828"
+            filePath = "Sample-Architectures/Architecutres/Viper/AddPersonWireFrame.swift"
+            timestampString = "523249232.824598"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "createAddPersonFormModule(to:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sample-Architectures/Architecutres/Viper/AddPerson/AddPersonInteractor.swift"
+            timestampString = "523369526.951634"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "save(person:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sample-Architectures/Architecutres/Viper/AddPerson/AddPersonRemoteDataManager.swift"
+            timestampString = "523369622.98605"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "save(person:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

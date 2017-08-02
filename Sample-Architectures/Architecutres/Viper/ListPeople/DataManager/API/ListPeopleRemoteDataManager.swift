@@ -5,16 +5,16 @@
 
 import Foundation
 
-class ListPeopleAPIDataManager: ListPeopleAPIDataManagerInputProtocol {
+class ListPeopleRemoteDataManager: ListPeopleRemoteDataManagerInputProtocol {
     
     var remoteRequestHandler: ListPeopleRemoteDataManagerOutputProtocol?
     
     init() {}
     
     func retrivePeopleList() {
-        
-        self.remoteRequestHandler?.onPeopleRetrieved(AppDelegate.people)
-        
+        if let remoteRequestHandler = self.remoteRequestHandler {
+            AppDelegate.dataStore.fetch(remoteRequestHandler.onRetrievePeople)
+        }        
     }
     
 }

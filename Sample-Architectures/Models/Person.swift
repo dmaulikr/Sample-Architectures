@@ -9,7 +9,7 @@
 import Foundation
 
 
-struct Person:Equatable {
+struct Person: Equatable {
     var name:String
     var email:String
     var age:Int

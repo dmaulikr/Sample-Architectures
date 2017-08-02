@@ -19,7 +19,7 @@ class ListPeopleWireFrame: ListPeopleWireFrameProtocol {
             
             let presenter: ListPeoplePresenterProtocol & ListPeopleInteractorOutputProtocol = ListPeoplePresenter()
             let interactor: ListPeopleInteractorInputProtocol & ListPeopleRemoteDataManagerOutputProtocol = ListPeopleInteractor()
-            let remoteDataManager: ListPeopleAPIDataManager = ListPeopleAPIDataManager()
+            let remoteDataManager: ListPeopleRemoteDataManagerInputProtocol = ListPeopleRemoteDataManager()
             let wireFrame: ListPeopleWireFrameProtocol = ListPeopleWireFrame()
             
             viewController.presenter = presenter
@@ -37,25 +37,11 @@ class ListPeopleWireFrame: ListPeopleWireFrameProtocol {
     }
     
     func presentPersonDetailScreen(from view: ListPeopleViewProtocol, for person: Person, to segue:UIStoryboardSegue) {
-        let personDetailViewController = PersonDetailWireFrame.createPersonDetailModule(for: person, to: segue)
-        
-        
-//        // Generating  components
-//        let view: ListPeopleViewProtocol = ListPeopleItem()
-//        let presenter: ListPeoplePresenterProtocol & ListPeopleInteractorOutputProtocol = ListPeoplePresenter()
-//        let interactor: ListPeopleInteractorInputProtocol = ListPeopleInteractor()
-//        let APIDataManager: ListPeopleAPIDataManagerInputProtocol = ListPeopleAPIDataManager()
-//        let localDataManager: ListPeopleLocalDataManagerInputProtocol = ListPeopleLocalDataManager()
-//        let wireFrame: ListPeopleWireFrameProtocol = ListPeopleWireFrame()
-//        
-//        // Connecting
-//        view.presenter = presenter
-//        presenter.view = view
-//        presenter.wireFrame = wireFrame
-//        presenter.interactor = interactor
-//        interactor.presenter = presenter
-//        interactor.APIDataManager = APIDataManager
-//        interactor.localDatamanager = localDataManager
+        PersonDetailWireFrame.createPersonDetailModule(for: person, to: segue)
+    }
+    
+    func presentAddPersonFormScreen(from view: ListPeopleViewProtocol, to segue: UIStoryboardSegue) {
+        AddPersonWireFrame.createAddPersonFormModule(to: segue)
     }
 
 }

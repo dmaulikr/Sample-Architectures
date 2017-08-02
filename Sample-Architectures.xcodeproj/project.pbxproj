@@ -15,7 +15,7 @@
 		77472D441DF6CE8600B1ED7B /* ListPeoplePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675EA1D52F8DF00C73659 /* ListPeoplePresenter.swift */; };
 		77472D451DF6CE8600B1ED7B /* ListPeopleLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675E51D52F8DF00C73659 /* ListPeopleLocalDataManager.swift */; };
 		77472D461DF6CE8600B1ED7B /* ListPeopleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E86761B1D53052B00C73659 /* ListPeopleCell.swift */; };
-		77472D471DF6CE8600B1ED7B /* ListPeopleAPIDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675E31D52F8DF00C73659 /* ListPeopleAPIDataManager.swift */; };
+		77472D471DF6CE8600B1ED7B /* ListPeopleRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675E31D52F8DF00C73659 /* ListPeopleRemoteDataManager.swift */; };
 		77472D481DF6CE8600B1ED7B /* ListPeopleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675EC1D52F8DF00C73659 /* ListPeopleProtocols.swift */; };
 		77472D4A1DF6CE8600B1ED7B /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675CE1D52F8DF00C73659 /* Person.swift */; };
 		77472D4B1DF6CE8600B1ED7B /* BaseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8676181D5300CE00C73659 /* BaseListViewController.swift */; };
@@ -87,6 +87,12 @@
 		77B0CCB61F2F9B0A008ED85D /* PersonDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B0CCAB1F2F8A6F008ED85D /* PersonDetailProtocols.swift */; };
 		77B0CCB91F2FA5BE008ED85D /* ListPeopleWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B0CCB71F2FA58C008ED85D /* ListPeopleWireFrame.swift */; };
 		77B0CCBA1F2FA5BF008ED85D /* ListPeopleWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B0CCB71F2FA58C008ED85D /* ListPeopleWireFrame.swift */; };
+		77B0CCC61F3023BB008ED85D /* AddPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B0CCC41F3023B2008ED85D /* AddPersonViewController.swift */; };
+		77B0CCC71F3023BB008ED85D /* AddPersonProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B0CCC11F30231E008ED85D /* AddPersonProtocols.swift */; };
+		77B0CCC81F3023BB008ED85D /* AddPersonWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B0CCBE1F302302008ED85D /* AddPersonWireFrame.swift */; };
+		77B0CCE61F31F788008ED85D /* AddPersonPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B0CCDC1F317749008ED85D /* AddPersonPresenter.swift */; };
+		77B0CCE71F31F792008ED85D /* AddPersonRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B0CCE41F317A95008ED85D /* AddPersonRemoteDataManager.swift */; };
+		77B0CCE81F31F798008ED85D /* AddPersonInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B0CCE21F317A42008ED85D /* AddPersonInteractor.swift */; };
 		9931A41DE577095275D5202E /* Pods_Sample_Architectures_MVC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0B2D65FB8392BD0C8129F8 /* Pods_Sample_Architectures_MVC.framework */; };
 		AB505B42FDE950D318E7FE37 /* Pods_Acceptance_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28EB5A14BC8F98ABA816BC4F /* Pods_Acceptance_Tests.framework */; };
 		D1EB49BBD09918DEE72E5A87 /* Pods_Sample_ArchitecturesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5501017CF10AFFBACD97B2DF /* Pods_Sample_ArchitecturesTests.framework */; };
@@ -148,6 +154,12 @@
 		77B0CCAF1F2F908A008ED85D /* ShowPersonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowPersonViewController.swift; sourceTree = "<group>"; };
 		77B0CCB11F2F96AB008ED85D /* PersonDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailPresenter.swift; sourceTree = "<group>"; };
 		77B0CCB71F2FA58C008ED85D /* ListPeopleWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPeopleWireFrame.swift; sourceTree = "<group>"; };
+		77B0CCBE1F302302008ED85D /* AddPersonWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPersonWireFrame.swift; sourceTree = "<group>"; };
+		77B0CCC11F30231E008ED85D /* AddPersonProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPersonProtocols.swift; sourceTree = "<group>"; };
+		77B0CCC41F3023B2008ED85D /* AddPersonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPersonViewController.swift; sourceTree = "<group>"; };
+		77B0CCDC1F317749008ED85D /* AddPersonPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPersonPresenter.swift; sourceTree = "<group>"; };
+		77B0CCE21F317A42008ED85D /* AddPersonInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPersonInteractor.swift; sourceTree = "<group>"; };
+		77B0CCE41F317A95008ED85D /* AddPersonRemoteDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPersonRemoteDataManager.swift; sourceTree = "<group>"; };
 		865971D0D5A28A3D1346E4FB /* Pods-Sample-ArchitecturesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample-ArchitecturesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sample-ArchitecturesTests/Pods-Sample-ArchitecturesTests.release.xcconfig"; sourceTree = "<group>"; };
 		8E8675C81D52F8DF00C73659 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E8675C91D52F8DF00C73659 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -164,7 +176,7 @@
 		8E8675DA1D52F8DF00C73659 /* ShowPersonViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowPersonViewModel.swift; sourceTree = "<group>"; };
 		8E8675DD1D52F8DF00C73659 /* MemStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemStore.swift; sourceTree = "<group>"; };
 		8E8675DE1D52F8DF00C73659 /* StoreProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreProtocol.swift; sourceTree = "<group>"; };
-		8E8675E31D52F8DF00C73659 /* ListPeopleAPIDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPeopleAPIDataManager.swift; sourceTree = "<group>"; };
+		8E8675E31D52F8DF00C73659 /* ListPeopleRemoteDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPeopleRemoteDataManager.swift; sourceTree = "<group>"; };
 		8E8675E51D52F8DF00C73659 /* ListPeopleLocalDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPeopleLocalDataManager.swift; sourceTree = "<group>"; };
 		8E8675E71D52F8DF00C73659 /* ListPeopleInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPeopleInteractor.swift; sourceTree = "<group>"; };
 		8E8675E81D52F8DF00C73659 /* ListPeopleItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPeopleItem.swift; sourceTree = "<group>"; };
@@ -348,7 +360,6 @@
 			children = (
 				77B0CCAD1F2F8E54008ED85D /* PersonDetailWireFrame.swift */,
 			);
-			name = WireFrame;
 			path = WireFrame;
 			sourceTree = "<group>";
 		};
@@ -357,7 +368,6 @@
 			children = (
 				77B0CCAF1F2F908A008ED85D /* ShowPersonViewController.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -366,7 +376,6 @@
 			children = (
 				77B0CCB11F2F96AB008ED85D /* PersonDetailPresenter.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -375,8 +384,91 @@
 			children = (
 				77B0CCAB1F2F8A6F008ED85D /* PersonDetailProtocols.swift */,
 			);
-			name = Protocols;
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		77B0CCBC1F3022DD008ED85D /* AddPerson */ = {
+			isa = PBXGroup;
+			children = (
+				77B0CCDE1F317938008ED85D /* DataManager */,
+				77B0CCE11F317A29008ED85D /* Interactor */,
+				77B0CCDB1F31772D008ED85D /* Presenter */,
+				77B0CCC01F30230C008ED85D /* Protocols */,
+				77B0CCC31F302396008ED85D /* View */,
+				77B0CCBD1F3022EC008ED85D /* WireFrame */,
+			);
+			path = AddPerson;
+			sourceTree = "<group>";
+		};
+		77B0CCBD1F3022EC008ED85D /* WireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				77B0CCBE1F302302008ED85D /* AddPersonWireFrame.swift */,
+			);
+			path = WireFrame;
+			sourceTree = "<group>";
+		};
+		77B0CCC01F30230C008ED85D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				77B0CCC11F30231E008ED85D /* AddPersonProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		77B0CCC31F302396008ED85D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				77B0CCC41F3023B2008ED85D /* AddPersonViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		77B0CCDA1F3029C7008ED85D /* MVVM + RxSwift */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "MVVM + RxSwift";
+			sourceTree = "<group>";
+		};
+		77B0CCDB1F31772D008ED85D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				77B0CCDC1F317749008ED85D /* AddPersonPresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		77B0CCDE1F317938008ED85D /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				77B0CCE01F317950008ED85D /* Local */,
+				77B0CCDF1F317943008ED85D /* Remote */,
+			);
+			name = DataManager;
+			sourceTree = "<group>";
+		};
+		77B0CCDF1F317943008ED85D /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				77B0CCE41F317A95008ED85D /* AddPersonRemoteDataManager.swift */,
+			);
+			name = Remote;
+			sourceTree = "<group>";
+		};
+		77B0CCE01F317950008ED85D /* Local */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Local;
+			sourceTree = "<group>";
+		};
+		77B0CCE11F317A29008ED85D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				77B0CCE21F317A42008ED85D /* AddPersonInteractor.swift */,
+			);
+			name = Interactor;
 			sourceTree = "<group>";
 		};
 		8E8675CA1D52F8DF00C73659 /* Controllers */ = {
@@ -427,6 +519,7 @@
 		8E8675DF1D52F8DF00C73659 /* Viper */ = {
 			isa = PBXGroup;
 			children = (
+				77B0CCBC1F3022DD008ED85D /* AddPerson */,
 				8E8675E01D52F8DF00C73659 /* ListPeople */,
 				77B0CCA61F2F89DE008ED85D /* PersonDetail */,
 			);
@@ -449,17 +542,18 @@
 		8E8675E11D52F8DF00C73659 /* DataManager */ = {
 			isa = PBXGroup;
 			children = (
-				8E8675E21D52F8DF00C73659 /* API */,
+				8E8675E21D52F8DF00C73659 /* Remote */,
 				8E8675E41D52F8DF00C73659 /* Local */,
 			);
 			path = DataManager;
 			sourceTree = "<group>";
 		};
-		8E8675E21D52F8DF00C73659 /* API */ = {
+		8E8675E21D52F8DF00C73659 /* Remote */ = {
 			isa = PBXGroup;
 			children = (
-				8E8675E31D52F8DF00C73659 /* ListPeopleAPIDataManager.swift */,
+				8E8675E31D52F8DF00C73659 /* ListPeopleRemoteDataManager.swift */,
 			);
+			name = Remote;
 			path = API;
 			sourceTree = "<group>";
 		};
@@ -517,6 +611,7 @@
 			children = (
 				8E8675CF1D52F8DF00C73659 /* MVC */,
 				8E8675D41D52F8DF00C73659 /* MVVM */,
+				77B0CCDA1F3029C7008ED85D /* MVVM + RxSwift */,
 				77B0CC861F28DA9C008ED85D /* PureMVC */,
 				8E8675DF1D52F8DF00C73659 /* Viper */,
 			);
@@ -1108,16 +1203,22 @@
 				77472D441DF6CE8600B1ED7B /* ListPeoplePresenter.swift in Sources */,
 				77B0CCA11F28E850008ED85D /* ListPeopleViewController.swift in Sources */,
 				77472D451DF6CE8600B1ED7B /* ListPeopleLocalDataManager.swift in Sources */,
+				77B0CCC61F3023BB008ED85D /* AddPersonViewController.swift in Sources */,
 				77472D461DF6CE8600B1ED7B /* ListPeopleCell.swift in Sources */,
-				77472D471DF6CE8600B1ED7B /* ListPeopleAPIDataManager.swift in Sources */,
+				77B0CCE71F31F792008ED85D /* AddPersonRemoteDataManager.swift in Sources */,
+				77472D471DF6CE8600B1ED7B /* ListPeopleRemoteDataManager.swift in Sources */,
+				77B0CCE61F31F788008ED85D /* AddPersonPresenter.swift in Sources */,
 				77472D481DF6CE8600B1ED7B /* ListPeopleProtocols.swift in Sources */,
+				77B0CCC71F3023BB008ED85D /* AddPersonProtocols.swift in Sources */,
 				77472D4A1DF6CE8600B1ED7B /* Person.swift in Sources */,
 				77472D4B1DF6CE8600B1ED7B /* BaseListViewController.swift in Sources */,
 				77472D4C1DF6CE8600B1ED7B /* ListPeopleInteractor.swift in Sources */,
 				77B0CCB51F2F9B06008ED85D /* PersonDetailPresenter.swift in Sources */,
 				77472D4D1DF6CE8600B1ED7B /* AppDelegate.swift in Sources */,
+				77B0CCC81F3023BB008ED85D /* AddPersonWireFrame.swift in Sources */,
 				77472D501DF6CE8600B1ED7B /* StoreProtocol.swift in Sources */,
 				77472D511DF6CE8600B1ED7B /* ListPeopleWireFrame.swift in Sources */,
+				77B0CCE81F31F798008ED85D /* AddPersonInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

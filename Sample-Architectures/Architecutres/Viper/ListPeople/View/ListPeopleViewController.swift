@@ -23,19 +23,23 @@ class ListPeopleViewController: BaseListViewController {
         self.presenter?.viewDidLoad()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.presenter?.viewWillAppear()
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "AddPersonSegue" {
-//            let navigationViewController = segue.destination as! UINavigationController
-//            let addPersonViewController = navigationViewController.childViewControllers.first as! AddPersonViewController
-//            addPersonViewController.delegate = self
+            
+            self.presenter?.showAddPersonForm(to: segue)
+            
         } else {
             
             if let cell = sender as? ListPeopleCell, let person = cell.person {
                 self.presenter?.showPersonDetail(for: person, to: segue)
             }
-//            let viewController = segue.destination as! ShowPersonViewController
-//            viewController.viewModel = ShowPersonViewModel(person: self.viewModel!.people[self.tableView.indexPathForSelectedRow!.row])
+            
         }
         
     }

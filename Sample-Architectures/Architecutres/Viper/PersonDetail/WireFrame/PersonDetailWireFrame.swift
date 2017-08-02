@@ -11,6 +11,7 @@ import UIKit
 
 class PersonDetailWireFrame: PersonDetailWireFrameProtocol {
 
+    @discardableResult
     class func createPersonDetailModule(for person: Person, to segue:UIStoryboardSegue) -> UIViewController {
         if let view = segue.destination as? ShowPersonViewController {
             
