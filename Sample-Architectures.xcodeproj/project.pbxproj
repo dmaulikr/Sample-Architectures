@@ -429,6 +429,7 @@
 			children = (
 			);
 			name = "MVVM + RxSwift";
+			path = "MVVM + RxSwift";
 			sourceTree = "<group>";
 		};
 		77B0CCDB1F31772D008ED85D /* Presenter */ = {
@@ -437,6 +438,7 @@
 				77B0CCDC1F317749008ED85D /* AddPersonPresenter.swift */,
 			);
 			name = Presenter;
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		77B0CCDE1F317938008ED85D /* DataManager */ = {
@@ -446,6 +448,7 @@
 				77B0CCDF1F317943008ED85D /* Remote */,
 			);
 			name = DataManager;
+			path = DataManager;
 			sourceTree = "<group>";
 		};
 		77B0CCDF1F317943008ED85D /* Remote */ = {
@@ -454,6 +457,7 @@
 				77B0CCE41F317A95008ED85D /* AddPersonRemoteDataManager.swift */,
 			);
 			name = Remote;
+			path = Remote;
 			sourceTree = "<group>";
 		};
 		77B0CCE01F317950008ED85D /* Local */ = {
@@ -461,6 +465,7 @@
 			children = (
 			);
 			name = Local;
+			path = Local;
 			sourceTree = "<group>";
 		};
 		77B0CCE11F317A29008ED85D /* Interactor */ = {
@@ -469,6 +474,7 @@
 				77B0CCE21F317A42008ED85D /* AddPersonInteractor.swift */,
 			);
 			name = Interactor;
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		8E8675CA1D52F8DF00C73659 /* Controllers */ = {
@@ -542,8 +548,8 @@
 		8E8675E11D52F8DF00C73659 /* DataManager */ = {
 			isa = PBXGroup;
 			children = (
-				8E8675E21D52F8DF00C73659 /* Remote */,
 				8E8675E41D52F8DF00C73659 /* Local */,
+				8E8675E21D52F8DF00C73659 /* Remote */,
 			);
 			path = DataManager;
 			sourceTree = "<group>";
@@ -554,7 +560,7 @@
 				8E8675E31D52F8DF00C73659 /* ListPeopleRemoteDataManager.swift */,
 			);
 			name = Remote;
-			path = API;
+			path = Remote;
 			sourceTree = "<group>";
 		};
 		8E8675E41D52F8DF00C73659 /* Local */ = {
