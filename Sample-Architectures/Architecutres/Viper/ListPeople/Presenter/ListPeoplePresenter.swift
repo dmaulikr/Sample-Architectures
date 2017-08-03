@@ -18,6 +18,10 @@ class ListPeoplePresenter: ListPeoplePresenterProtocol {
     
     func viewWillAppear() {
         self.view?.showLoading()
+        self.reloadPeopleList()
+    }
+    
+    func reloadPeopleList() {
         self.interactor?.fetchPeole()
     }
     
@@ -29,9 +33,17 @@ class ListPeoplePresenter: ListPeoplePresenterProtocol {
         self.wireFrame?.presentAddPersonFormScreen(from: self.view!, to: segue)
     }
     
+    func remove(_ person: Person) {
+        self.interactor?.remove(person)
+    }
+    
 }
 
 extension ListPeoplePresenter: ListPeopleInteractorOutputProtocol {
+    
+    func didRemovePerson() {
+        self.view?.didRemovePerson()
+    }
 
     func didRetrivePeople(_ people: [Person]) {
         

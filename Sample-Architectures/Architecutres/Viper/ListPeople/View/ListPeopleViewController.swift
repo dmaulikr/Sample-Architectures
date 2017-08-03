@@ -43,6 +43,11 @@ class ListPeopleViewController: BaseListViewController {
         }
         
     }
+    
+    override func setEditing(_ editing: Bool, animated: Bool) {
+        super.setEditing(editing, animated: animated)
+        self.tableView.isEditing = editing
+    }
 
 }
 
@@ -61,6 +66,10 @@ extension ListPeopleViewController: ListPeopleViewProtocol {
         self.tableView.reloadData()
     }
     
+    func didRemovePerson() {
+        self.presenter?.reloadPeopleList()
+    }
+    
 }
 
 extension ListPeopleViewController: UITableViewDataSource {
@@ -76,16 +85,8 @@ extension ListPeopleViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         switch editingStyle {
         case .delete:
-            
             let person = self.people[indexPath.row]
-            do {
-                try AppDelegate.dataStore.delete(person, completionHandler: {
-//                    self.loadData()
-                })
-            }
-            catch {}
-            
-            break
+            self.presenter?.remove(person)
             
         default:
             print("ignore other styles")

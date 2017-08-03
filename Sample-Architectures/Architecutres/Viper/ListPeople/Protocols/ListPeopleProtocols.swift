@@ -15,6 +15,7 @@ protocol ListPeopleViewProtocol: class {
     func hideLoading()
     
     func showPeople(_ people: [Person])
+    func didRemovePerson()
 }
 
 //Mark: Wireframe
@@ -34,14 +35,19 @@ protocol ListPeoplePresenterProtocol: class {
     
     func viewDidLoad()
     func viewWillAppear()
+    func reloadPeopleList()
     func showPersonDetail(for person:Person, to segue:UIStoryboardSegue)
     func showAddPersonForm(to segue:UIStoryboardSegue)
+    
+    func remove(_ person: Person)
     
 }
 
 protocol ListPeopleInteractorOutputProtocol: class {
     
     func didRetrivePeople(_ people: [Person])
+    
+    func didRemovePerson()
     
     /**
     * Add here your methods for communication INTERACTOR -> PRESENTER
@@ -52,12 +58,13 @@ protocol ListPeopleInteractorOutputProtocol: class {
 
 protocol ListPeopleInteractorInputProtocol: class {
     var presenter: ListPeopleInteractorOutputProtocol? { get set }
-    var APIDataManager: ListPeopleRemoteDataManagerInputProtocol? { get set }
+    var remoteDataManager: ListPeopleRemoteDataManagerInputProtocol? { get set }
     var localDatamanager: ListPeopleLocalDataManagerInputProtocol? { get set }
     /**
     * Add here your methods for communication PRESENTER -> INTERACTOR
     */
     func fetchPeole()
+    func remove(_ person: Person)
 }
 
 //protocol ListPeopleDataManagerInputProtocol: class {
@@ -68,7 +75,8 @@ protocol ListPeopleInteractorInputProtocol: class {
 
 protocol ListPeopleRemoteDataManagerOutputProtocol: class {
     func onRetrievePeople(_ posts: [Person])
-    func onError()
+    func didRemovePerson()
+    func onError()    
 }
 
 //Mark: DataManager
@@ -77,6 +85,7 @@ protocol ListPeopleRemoteDataManagerInputProtocol: class {
     var remoteRequestHandler: ListPeopleRemoteDataManagerOutputProtocol? { get set }
     
     func retrivePeopleList()
+    func remove(_ person:Person)    
     /**
     * Add here your methods for communication INTERACTOR -> APIDATAMANAGER
     */

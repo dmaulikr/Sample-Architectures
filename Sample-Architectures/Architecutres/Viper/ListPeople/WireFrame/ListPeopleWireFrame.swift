@@ -27,7 +27,7 @@ class ListPeopleWireFrame: ListPeopleWireFrameProtocol {
             presenter.interactor = interactor
             presenter.wireFrame = wireFrame
             interactor.presenter = presenter
-            interactor.APIDataManager = remoteDataManager
+            interactor.remoteDataManager = remoteDataManager
             remoteDataManager.remoteRequestHandler = interactor
             
             return navigationController

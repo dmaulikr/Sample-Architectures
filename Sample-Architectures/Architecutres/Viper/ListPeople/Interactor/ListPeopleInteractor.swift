@@ -8,13 +8,17 @@ import Foundation
 class ListPeopleInteractor: ListPeopleInteractorInputProtocol {
     
     weak var presenter: ListPeopleInteractorOutputProtocol?
-    var APIDataManager: ListPeopleRemoteDataManagerInputProtocol?
+    var remoteDataManager: ListPeopleRemoteDataManagerInputProtocol?
     var localDatamanager: ListPeopleLocalDataManagerInputProtocol?
     
     init() {}
     
     func fetchPeole() {
-        self.APIDataManager?.retrivePeopleList()
+        self.remoteDataManager?.retrivePeopleList()
+    }
+    
+    func remove(_ person: Person) {
+        self.remoteDataManager?.remove(person)
     }
     
 }
@@ -29,6 +33,10 @@ extension ListPeopleInteractor: ListPeopleRemoteDataManagerOutputProtocol {
     
     func onError() {
         
+    }
+    
+    func didRemovePerson() {
+        self.presenter?.didRemovePerson()
     }
     
 }

@@ -17,4 +17,10 @@ class ListPeopleRemoteDataManager: ListPeopleRemoteDataManagerInputProtocol {
         }        
     }
     
+    func remove(_ person:Person) {
+        if let remoteRequestHandler = self.remoteRequestHandler {
+            try! AppDelegate.dataStore.delete(person, completionHandler: remoteRequestHandler.didRemovePerson)
+        }        
+    }
+    
 }
