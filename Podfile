@@ -28,6 +28,7 @@ end
 
 target 'Sample-Architectures-PureMVC' do
     main_pods
+    pod 'puremvc'
 end
 
 target 'Sample-Architectures-Viper' do

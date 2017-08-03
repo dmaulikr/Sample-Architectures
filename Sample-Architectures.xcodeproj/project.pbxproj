@@ -63,13 +63,10 @@
 		7758FBF41DF6579000BF2EBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E8676121D52FD3900C73659 /* LaunchScreen.storyboard */; };
 		7758FBF51DF6579000BF2EBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E8675C91D52F8DF00C73659 /* Assets.xcassets */; };
 		77B0CC8A1F28DAF0008ED85D /* MemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675DD1D52F8DF00C73659 /* MemStore.swift */; };
-		77B0CC8B1F28DAF0008ED85D /* AddPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675D11D52F8DF00C73659 /* AddPersonViewController.swift */; };
-		77B0CC8C1F28DAF0008ED85D /* ShowPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675D31D52F8DF00C73659 /* ShowPersonViewController.swift */; };
 		77B0CC8D1F28DAF0008ED85D /* ListPeopleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E86761B1D53052B00C73659 /* ListPeopleCell.swift */; };
 		77B0CC8E1F28DAF0008ED85D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675CE1D52F8DF00C73659 /* Person.swift */; };
 		77B0CC8F1F28DAF0008ED85D /* BaseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8676181D5300CE00C73659 /* BaseListViewController.swift */; };
 		77B0CC901F28DAF0008ED85D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675C81D52F8DF00C73659 /* AppDelegate.swift */; };
-		77B0CC911F28DAF0008ED85D /* ListPeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675D21D52F8DF00C73659 /* ListPeopleViewController.swift */; };
 		77B0CC921F28DAF0008ED85D /* StoreProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675DE1D52F8DF00C73659 /* StoreProtocol.swift */; };
 		77B0CC941F28DAF0008ED85D /* Pods_Sample_Architectures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02E8B15FD966631A766BA348 /* Pods_Sample_Architectures.framework */; };
 		77B0CC961F28DAF0008ED85D /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E8676101D52FD3300C73659 /* main.storyboard */; };
@@ -93,6 +90,27 @@
 		77B0CCE61F31F788008ED85D /* AddPersonPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B0CCDC1F317749008ED85D /* AddPersonPresenter.swift */; };
 		77B0CCE71F31F792008ED85D /* AddPersonRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B0CCE41F317A95008ED85D /* AddPersonRemoteDataManager.swift */; };
 		77B0CCE81F31F798008ED85D /* AddPersonInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B0CCE21F317A42008ED85D /* AddPersonInteractor.swift */; };
+		77E6D5AE1F33617100C2ABD9 /* ListPeopleWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B0CCB71F2FA58C008ED85D /* ListPeopleWireFrame.swift */; };
+		77E6D5B01F33639C00C2ABD9 /* ApplicationFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D5AF1F33639C00C2ABD9 /* ApplicationFacade.swift */; };
+		77E6D5B11F33639C00C2ABD9 /* ApplicationFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D5AF1F33639C00C2ABD9 /* ApplicationFacade.swift */; };
+		77E6D5B41F33658300C2ABD9 /* ListPeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D5B31F33658300C2ABD9 /* ListPeopleViewController.swift */; };
+		77E6D5B51F33668A00C2ABD9 /* ListPeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D5B31F33658300C2ABD9 /* ListPeopleViewController.swift */; };
+		77E6D5B71F3366B300C2ABD9 /* ApplicationFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D5B61F3366B300C2ABD9 /* ApplicationFacade.swift */; };
+		77E6D5B81F3366B600C2ABD9 /* ApplicationFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D5B61F3366B300C2ABD9 /* ApplicationFacade.swift */; };
+		77E6D5B91F3366B700C2ABD9 /* ApplicationFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D5B61F3366B300C2ABD9 /* ApplicationFacade.swift */; };
+		77E6D5BA1F3366B800C2ABD9 /* ApplicationFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D5B61F3366B300C2ABD9 /* ApplicationFacade.swift */; };
+		77E6D5BE1F3369B000C2ABD9 /* StartupCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D5BD1F3369B000C2ABD9 /* StartupCommand.swift */; };
+		77E6D5BF1F3369B000C2ABD9 /* StartupCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D5BD1F3369B000C2ABD9 /* StartupCommand.swift */; };
+		77E6D5C21F336AD300C2ABD9 /* PrepareModelCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D5C11F336AD300C2ABD9 /* PrepareModelCommand.swift */; };
+		77E6D5C31F336AD300C2ABD9 /* PrepareModelCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D5C11F336AD300C2ABD9 /* PrepareModelCommand.swift */; };
+		77E6D5C51F336B1E00C2ABD9 /* PersonProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D5C41F336B1E00C2ABD9 /* PersonProxy.swift */; };
+		77E6D5C61F336B1E00C2ABD9 /* PersonProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D5C41F336B1E00C2ABD9 /* PersonProxy.swift */; };
+		77E6D5C81F336F4500C2ABD9 /* PrepareViewCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D5C71F336F4500C2ABD9 /* PrepareViewCommand.swift */; };
+		77E6D5C91F336F4500C2ABD9 /* PrepareViewCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D5C71F336F4500C2ABD9 /* PrepareViewCommand.swift */; };
+		77E6D5CB1F33746B00C2ABD9 /* ListPeopleMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D5CA1F33746B00C2ABD9 /* ListPeopleMediator.swift */; };
+		77E6D5CC1F33746B00C2ABD9 /* ListPeopleMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D5CA1F33746B00C2ABD9 /* ListPeopleMediator.swift */; };
+		77E6D5CE1F33771500C2ABD9 /* NavigationMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D5CD1F33771500C2ABD9 /* NavigationMediator.swift */; };
+		77E6D5CF1F33771500C2ABD9 /* NavigationMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D5CD1F33771500C2ABD9 /* NavigationMediator.swift */; };
 		9931A41DE577095275D5202E /* Pods_Sample_Architectures_MVC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0B2D65FB8392BD0C8129F8 /* Pods_Sample_Architectures_MVC.framework */; };
 		AB505B42FDE950D318E7FE37 /* Pods_Acceptance_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28EB5A14BC8F98ABA816BC4F /* Pods_Acceptance_Tests.framework */; };
 		D1EB49BBD09918DEE72E5A87 /* Pods_Sample_ArchitecturesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5501017CF10AFFBACD97B2DF /* Pods_Sample_ArchitecturesTests.framework */; };
@@ -160,6 +178,15 @@
 		77B0CCDC1F317749008ED85D /* AddPersonPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPersonPresenter.swift; sourceTree = "<group>"; };
 		77B0CCE21F317A42008ED85D /* AddPersonInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPersonInteractor.swift; sourceTree = "<group>"; };
 		77B0CCE41F317A95008ED85D /* AddPersonRemoteDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPersonRemoteDataManager.swift; sourceTree = "<group>"; };
+		77E6D5AF1F33639C00C2ABD9 /* ApplicationFacade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApplicationFacade.swift; path = "Sample-Architectures/Architecutres/Viper/AddPerson/ApplicationFacade.swift"; sourceTree = SOURCE_ROOT; };
+		77E6D5B31F33658300C2ABD9 /* ListPeopleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPeopleViewController.swift; sourceTree = SOURCE_ROOT; };
+		77E6D5B61F3366B300C2ABD9 /* ApplicationFacade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationFacade.swift; sourceTree = "<group>"; };
+		77E6D5BD1F3369B000C2ABD9 /* StartupCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartupCommand.swift; sourceTree = SOURCE_ROOT; };
+		77E6D5C11F336AD300C2ABD9 /* PrepareModelCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrepareModelCommand.swift; sourceTree = SOURCE_ROOT; };
+		77E6D5C41F336B1E00C2ABD9 /* PersonProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonProxy.swift; sourceTree = SOURCE_ROOT; };
+		77E6D5C71F336F4500C2ABD9 /* PrepareViewCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrepareViewCommand.swift; sourceTree = SOURCE_ROOT; };
+		77E6D5CA1F33746B00C2ABD9 /* ListPeopleMediator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPeopleMediator.swift; sourceTree = SOURCE_ROOT; };
+		77E6D5CD1F33771500C2ABD9 /* NavigationMediator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationMediator.swift; sourceTree = SOURCE_ROOT; };
 		865971D0D5A28A3D1346E4FB /* Pods-Sample-ArchitecturesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample-ArchitecturesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sample-ArchitecturesTests/Pods-Sample-ArchitecturesTests.release.xcconfig"; sourceTree = "<group>"; };
 		8E8675C81D52F8DF00C73659 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E8675C91D52F8DF00C73659 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -340,6 +367,11 @@
 		77B0CC861F28DA9C008ED85D /* PureMVC */ = {
 			isa = PBXGroup;
 			children = (
+				77E6D5C01F336A8D00C2ABD9 /* Proxies */,
+				77E6D5BC1F33696400C2ABD9 /* Mediators */,
+				77E6D5BB1F33695D00C2ABD9 /* Commands */,
+				77E6D5B21F33657000C2ABD9 /* Controllers */,
+				77E6D5AF1F33639C00C2ABD9 /* ApplicationFacade.swift */,
 			);
 			path = PureMVC;
 			sourceTree = "<group>";
@@ -428,7 +460,6 @@
 			isa = PBXGroup;
 			children = (
 			);
-			name = "MVVM + RxSwift";
 			path = "MVVM + RxSwift";
 			sourceTree = "<group>";
 		};
@@ -437,7 +468,6 @@
 			children = (
 				77B0CCDC1F317749008ED85D /* AddPersonPresenter.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -447,7 +477,6 @@
 				77B0CCE01F317950008ED85D /* Local */,
 				77B0CCDF1F317943008ED85D /* Remote */,
 			);
-			name = DataManager;
 			path = DataManager;
 			sourceTree = "<group>";
 		};
@@ -456,7 +485,6 @@
 			children = (
 				77B0CCE41F317A95008ED85D /* AddPersonRemoteDataManager.swift */,
 			);
-			name = Remote;
 			path = Remote;
 			sourceTree = "<group>";
 		};
@@ -464,7 +492,6 @@
 			isa = PBXGroup;
 			children = (
 			);
-			name = Local;
 			path = Local;
 			sourceTree = "<group>";
 		};
@@ -473,8 +500,42 @@
 			children = (
 				77B0CCE21F317A42008ED85D /* AddPersonInteractor.swift */,
 			);
-			name = Interactor;
 			path = Interactor;
+			sourceTree = "<group>";
+		};
+		77E6D5B21F33657000C2ABD9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				77E6D5B31F33658300C2ABD9 /* ListPeopleViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		77E6D5BB1F33695D00C2ABD9 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				77E6D5BD1F3369B000C2ABD9 /* StartupCommand.swift */,
+				77E6D5C11F336AD300C2ABD9 /* PrepareModelCommand.swift */,
+				77E6D5C71F336F4500C2ABD9 /* PrepareViewCommand.swift */,
+			);
+			name = Commands;
+			sourceTree = "<group>";
+		};
+		77E6D5BC1F33696400C2ABD9 /* Mediators */ = {
+			isa = PBXGroup;
+			children = (
+				77E6D5CA1F33746B00C2ABD9 /* ListPeopleMediator.swift */,
+				77E6D5CD1F33771500C2ABD9 /* NavigationMediator.swift */,
+			);
+			name = Mediators;
+			sourceTree = "<group>";
+		};
+		77E6D5C01F336A8D00C2ABD9 /* Proxies */ = {
+			isa = PBXGroup;
+			children = (
+				77E6D5C41F336B1E00C2ABD9 /* PersonProxy.swift */,
+			);
+			name = Proxies;
 			sourceTree = "<group>";
 		};
 		8E8675CA1D52F8DF00C73659 /* Controllers */ = {
@@ -518,6 +579,7 @@
 				77B0CCB71F2FA58C008ED85D /* ListPeopleWireFrame.swift */,
 				8E8675DD1D52F8DF00C73659 /* MemStore.swift */,
 				8E8675DE1D52F8DF00C73659 /* StoreProtocol.swift */,
+				77E6D5B61F3366B300C2ABD9 /* ApplicationFacade.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -559,7 +621,6 @@
 			children = (
 				8E8675E31D52F8DF00C73659 /* ListPeopleRemoteDataManager.swift */,
 			);
-			name = Remote;
 			path = Remote;
 			sourceTree = "<group>";
 		};
@@ -1217,6 +1278,7 @@
 				77472D481DF6CE8600B1ED7B /* ListPeopleProtocols.swift in Sources */,
 				77B0CCC71F3023BB008ED85D /* AddPersonProtocols.swift in Sources */,
 				77472D4A1DF6CE8600B1ED7B /* Person.swift in Sources */,
+				77E6D5BA1F3366B800C2ABD9 /* ApplicationFacade.swift in Sources */,
 				77472D4B1DF6CE8600B1ED7B /* BaseListViewController.swift in Sources */,
 				77472D4C1DF6CE8600B1ED7B /* ListPeopleInteractor.swift in Sources */,
 				77B0CCB51F2F9B06008ED85D /* PersonDetailPresenter.swift in Sources */,
@@ -1232,7 +1294,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77E6D5CE1F33771500C2ABD9 /* NavigationMediator.swift in Sources */,
+				77E6D5CB1F33746B00C2ABD9 /* ListPeopleMediator.swift in Sources */,
+				77E6D5B41F33658300C2ABD9 /* ListPeopleViewController.swift in Sources */,
+				77E6D5B01F33639C00C2ABD9 /* ApplicationFacade.swift in Sources */,
+				77E6D5B71F3366B300C2ABD9 /* ApplicationFacade.swift in Sources */,
+				77E6D5C51F336B1E00C2ABD9 /* PersonProxy.swift in Sources */,
+				77E6D5C81F336F4500C2ABD9 /* PrepareViewCommand.swift in Sources */,
+				77E6D5BE1F3369B000C2ABD9 /* StartupCommand.swift in Sources */,
 				7758FB881DF59E0700BF2EBC /* Sample_ArchitecturesTests.swift in Sources */,
+				77E6D5C21F336AD300C2ABD9 /* PrepareModelCommand.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1256,6 +1327,7 @@
 				7758FBB51DF6515A00BF2EBC /* Person.swift in Sources */,
 				7758FBB61DF6515A00BF2EBC /* BaseListViewController.swift in Sources */,
 				7758FBB81DF6515A00BF2EBC /* AppDelegate.swift in Sources */,
+				77E6D5B81F3366B600C2ABD9 /* ApplicationFacade.swift in Sources */,
 				7758FBBA1DF6515A00BF2EBC /* ListPeopleViewController.swift in Sources */,
 				7758FBBC1DF6515A00BF2EBC /* StoreProtocol.swift in Sources */,
 				77B0CCB91F2FA5BE008ED85D /* ListPeopleWireFrame.swift in Sources */,
@@ -1270,6 +1342,7 @@
 				7758FBD61DF6579000BF2EBC /* ShowPersonViewModel.swift in Sources */,
 				7758FBD71DF6579000BF2EBC /* MemStore.swift in Sources */,
 				7758FBDE1DF6579000BF2EBC /* ListPeopleCell.swift in Sources */,
+				77E6D5B91F3366B700C2ABD9 /* ApplicationFacade.swift in Sources */,
 				7758FBE21DF6579000BF2EBC /* Person.swift in Sources */,
 				7758FBE31DF6579000BF2EBC /* BaseListViewController.swift in Sources */,
 				7758FBE51DF6579000BF2EBC /* AppDelegate.swift in Sources */,
@@ -1286,15 +1359,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77E6D5B51F33668A00C2ABD9 /* ListPeopleViewController.swift in Sources */,
 				77B0CC8A1F28DAF0008ED85D /* MemStore.swift in Sources */,
-				77B0CC8B1F28DAF0008ED85D /* AddPersonViewController.swift in Sources */,
-				77B0CC8C1F28DAF0008ED85D /* ShowPersonViewController.swift in Sources */,
 				77B0CC8D1F28DAF0008ED85D /* ListPeopleCell.swift in Sources */,
+				77E6D5BF1F3369B000C2ABD9 /* StartupCommand.swift in Sources */,
+				77E6D5B11F33639C00C2ABD9 /* ApplicationFacade.swift in Sources */,
+				77E6D5CF1F33771500C2ABD9 /* NavigationMediator.swift in Sources */,
+				77E6D5CC1F33746B00C2ABD9 /* ListPeopleMediator.swift in Sources */,
 				77B0CC8E1F28DAF0008ED85D /* Person.swift in Sources */,
 				77B0CC8F1F28DAF0008ED85D /* BaseListViewController.swift in Sources */,
 				77B0CC901F28DAF0008ED85D /* AppDelegate.swift in Sources */,
-				77B0CC911F28DAF0008ED85D /* ListPeopleViewController.swift in Sources */,
+				77E6D5C91F336F4500C2ABD9 /* PrepareViewCommand.swift in Sources */,
 				77B0CC921F28DAF0008ED85D /* StoreProtocol.swift in Sources */,
+				77E6D5C61F336B1E00C2ABD9 /* PersonProxy.swift in Sources */,
+				77E6D5AE1F33617100C2ABD9 /* ListPeopleWireFrame.swift in Sources */,
+				77E6D5C31F336AD300C2ABD9 /* PrepareModelCommand.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

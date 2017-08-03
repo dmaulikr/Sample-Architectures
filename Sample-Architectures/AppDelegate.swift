@@ -49,7 +49,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.tintColor = UIColor(red: 29.0/255.0, green: 173.0/255.0, blue: 234.0/255.0, alpha: 1.0)
         
         switch AppDelegate.architecture! {
+        
         case .Viper: self.window!.rootViewController = ListPeopleWireFrame.createListPeople()
+        
+        case .PureMVC:
+            let navigationViewController = storyboard.instantiateInitialViewController()
+            self.window!.rootViewController = navigationViewController
+            ApplicationFacade.sharedInstance.startup(app: window!.rootViewController as! UINavigationController)
+            
         default: self.window!.rootViewController = storyboard.instantiateInitialViewController()!
         }
         
