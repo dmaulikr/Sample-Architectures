@@ -21,4 +21,15 @@ class PersonProxy: Proxy {
         return data as! [Person]
     }
     
+    func delete(_ person: Person) {
+        var people = data as! [Person]
+        for (index, element) in self.people.enumerated() {
+            if element == person {
+                people.remove(at: index)
+                self.data = people
+                break
+            }
+        }
+    }
+    
 }

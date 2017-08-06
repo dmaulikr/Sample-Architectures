@@ -16,13 +16,29 @@ class ListPeopleMediator: Mediator {
     init(viewComponent: ListPeopleViewController) {
         super.init(mediatorName: ListPeopleMediator.name(), viewComponent: viewComponent)
     }
-    
+
     override func onRegister() {
-//        employeeAdmin._delegate = self
+        self.listPeopleViewController.mediator = self
     }
     
     func viewDidLoad() {
-//        facade.register(UserListMediator(viewComponent: employeeAdmin.userList))
+
+        if let personProxy = facade.retrieveProxy(PersonProxy.name()) as? PersonProxy {
+            self.listPeopleViewController.people = personProxy.people
+        }
+        
+    }
+    
+    func onDelete(_ person: Person) {
+        sendNotification(ApplicationFacade.DELETE_PERSON)
+    }
+    
+    func onSelect(_ person: Person) {
+        sendNotification(ApplicationFacade.PERSON_SELECTED, body: person)
+    }
+    
+    func onNew() {
+        sendNotification(ApplicationFacade.NEW_PERSON)
     }
     
     override func listNotificationInterests() -> [Any]! {

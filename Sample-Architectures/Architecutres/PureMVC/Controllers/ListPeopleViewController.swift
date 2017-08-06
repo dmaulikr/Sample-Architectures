@@ -12,29 +12,30 @@ class ListPeopleViewController: BaseListViewController {
 
     @IBOutlet weak var tableView:UITableView!
     
-    fileprivate var people:[Person] = []
+    var mediator: ListPeopleMediator?
+    
+    var people:[Person] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        self.title = "PureMVC"
+        
+        self.mediator?.viewDidLoad()        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if identifier == "AddPersonSegue" {
+            self.mediator?.onNew()
+        }
+        
+        return false
     }
-    */
+    
+    override func setEditing(_ editing: Bool, animated: Bool) {
+        super.setEditing(editing, animated: animated)
+        self.tableView.isEditing = editing
+    }
 
 }
 
@@ -49,17 +50,18 @@ extension ListPeopleViewController: UITableViewDataSource {
         return tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let person = self.people[indexPath.row]
+        self.mediator?.onSelect(person)
+    }
+    
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         switch editingStyle {
         case .delete:
-            
             let person = self.people[indexPath.row]
-            do {
-                //                try AppDelegate.dataStore.delete(person, completionHandler: {
-                //                    self.loadData()
-                //                })
-            }
-            catch {}
+            self.mediator?.onDelete(person)
+            self.people.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
             
         default:
             print("ignore other styles")

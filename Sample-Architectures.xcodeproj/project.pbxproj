@@ -62,6 +62,12 @@
 		7758FBF31DF6579000BF2EBC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E8675CC1D52F8DF00C73659 /* Info.plist */; };
 		7758FBF41DF6579000BF2EBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E8676121D52FD3900C73659 /* LaunchScreen.storyboard */; };
 		7758FBF51DF6579000BF2EBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E8675C91D52F8DF00C73659 /* Assets.xcassets */; };
+		7773C67A1F35B05900551CB4 /* ShowPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7773C6791F35B05900551CB4 /* ShowPersonViewController.swift */; };
+		7773C67B1F35B05900551CB4 /* ShowPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7773C6791F35B05900551CB4 /* ShowPersonViewController.swift */; };
+		7773C67D1F374FDF00551CB4 /* DeletePersonCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7773C67C1F374FDF00551CB4 /* DeletePersonCommand.swift */; };
+		7773C67E1F374FDF00551CB4 /* DeletePersonCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7773C67C1F374FDF00551CB4 /* DeletePersonCommand.swift */; };
+		7773C6801F375D6C00551CB4 /* AddPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7773C67F1F375D6C00551CB4 /* AddPersonViewController.swift */; };
+		7773C6811F375D6C00551CB4 /* AddPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7773C67F1F375D6C00551CB4 /* AddPersonViewController.swift */; };
 		77B0CC8A1F28DAF0008ED85D /* MemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675DD1D52F8DF00C73659 /* MemStore.swift */; };
 		77B0CC8D1F28DAF0008ED85D /* ListPeopleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E86761B1D53052B00C73659 /* ListPeopleCell.swift */; };
 		77B0CC8E1F28DAF0008ED85D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8675CE1D52F8DF00C73659 /* Person.swift */; };
@@ -111,6 +117,12 @@
 		77E6D5CC1F33746B00C2ABD9 /* ListPeopleMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D5CA1F33746B00C2ABD9 /* ListPeopleMediator.swift */; };
 		77E6D5CE1F33771500C2ABD9 /* NavigationMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D5CD1F33771500C2ABD9 /* NavigationMediator.swift */; };
 		77E6D5CF1F33771500C2ABD9 /* NavigationMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D5CD1F33771500C2ABD9 /* NavigationMediator.swift */; };
+		77E6D5D11F3598D700C2ABD9 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D5D01F3598D700C2ABD9 /* NavigationController.swift */; };
+		77E6D5D21F3598D700C2ABD9 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D5D01F3598D700C2ABD9 /* NavigationController.swift */; };
+		77E6D5D51F35994200C2ABD9 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D5D41F35994200C2ABD9 /* NavigationController.swift */; };
+		77E6D5D61F35996B00C2ABD9 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D5D41F35994200C2ABD9 /* NavigationController.swift */; };
+		77E6D5D71F35996C00C2ABD9 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D5D41F35994200C2ABD9 /* NavigationController.swift */; };
+		77E6D5D81F35996E00C2ABD9 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D5D41F35994200C2ABD9 /* NavigationController.swift */; };
 		9931A41DE577095275D5202E /* Pods_Sample_Architectures_MVC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0B2D65FB8392BD0C8129F8 /* Pods_Sample_Architectures_MVC.framework */; };
 		AB505B42FDE950D318E7FE37 /* Pods_Acceptance_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28EB5A14BC8F98ABA816BC4F /* Pods_Acceptance_Tests.framework */; };
 		D1EB49BBD09918DEE72E5A87 /* Pods_Sample_ArchitecturesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5501017CF10AFFBACD97B2DF /* Pods_Sample_ArchitecturesTests.framework */; };
@@ -165,6 +177,9 @@
 		7758FBD11DF6515A00BF2EBC /* Sample-Architectures-MVC.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Sample-Architectures-MVC.plist"; path = "/Users/ronaldogomes/Documents/projects/iphone/samples/Sample-Architectures/Sample-Architectures-MVC.plist"; sourceTree = "<absolute>"; };
 		7758FBFB1DF6579000BF2EBC /* Sample-Architectures-MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample-Architectures-MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7758FBFC1DF6579100BF2EBC /* Sample-Architectures-MVVM.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Sample-Architectures-MVVM.plist"; path = "/Users/ronaldogomes/Documents/projects/iphone/samples/Sample-Architectures/Sample-Architectures-MVVM.plist"; sourceTree = "<absolute>"; };
+		7773C6791F35B05900551CB4 /* ShowPersonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowPersonViewController.swift; sourceTree = "<group>"; };
+		7773C67C1F374FDF00551CB4 /* DeletePersonCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeletePersonCommand.swift; sourceTree = "<group>"; };
+		7773C67F1F375D6C00551CB4 /* AddPersonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPersonViewController.swift; sourceTree = "<group>"; };
 		77B0CC9F1F28DAF0008ED85D /* Sample-Architectures-PureMVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample-Architectures-PureMVC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77B0CCA01F28DAF0008ED85D /* Sample-Architectures-PureMVC.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Sample-Architectures-PureMVC.plist"; path = "/Users/ronaldogomes/Documents/projects/iphone/samples/Sample-Architectures/Sample-Architectures-PureMVC.plist"; sourceTree = "<absolute>"; };
 		77B0CCAB1F2F8A6F008ED85D /* PersonDetailProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailProtocols.swift; sourceTree = "<group>"; };
@@ -178,15 +193,17 @@
 		77B0CCDC1F317749008ED85D /* AddPersonPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPersonPresenter.swift; sourceTree = "<group>"; };
 		77B0CCE21F317A42008ED85D /* AddPersonInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPersonInteractor.swift; sourceTree = "<group>"; };
 		77B0CCE41F317A95008ED85D /* AddPersonRemoteDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPersonRemoteDataManager.swift; sourceTree = "<group>"; };
-		77E6D5AF1F33639C00C2ABD9 /* ApplicationFacade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApplicationFacade.swift; path = "Sample-Architectures/Architecutres/Viper/AddPerson/ApplicationFacade.swift"; sourceTree = SOURCE_ROOT; };
-		77E6D5B31F33658300C2ABD9 /* ListPeopleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPeopleViewController.swift; sourceTree = SOURCE_ROOT; };
+		77E6D5AF1F33639C00C2ABD9 /* ApplicationFacade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationFacade.swift; sourceTree = "<group>"; };
+		77E6D5B31F33658300C2ABD9 /* ListPeopleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPeopleViewController.swift; sourceTree = "<group>"; };
 		77E6D5B61F3366B300C2ABD9 /* ApplicationFacade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationFacade.swift; sourceTree = "<group>"; };
-		77E6D5BD1F3369B000C2ABD9 /* StartupCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartupCommand.swift; sourceTree = SOURCE_ROOT; };
-		77E6D5C11F336AD300C2ABD9 /* PrepareModelCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrepareModelCommand.swift; sourceTree = SOURCE_ROOT; };
-		77E6D5C41F336B1E00C2ABD9 /* PersonProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonProxy.swift; sourceTree = SOURCE_ROOT; };
-		77E6D5C71F336F4500C2ABD9 /* PrepareViewCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrepareViewCommand.swift; sourceTree = SOURCE_ROOT; };
-		77E6D5CA1F33746B00C2ABD9 /* ListPeopleMediator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPeopleMediator.swift; sourceTree = SOURCE_ROOT; };
-		77E6D5CD1F33771500C2ABD9 /* NavigationMediator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationMediator.swift; sourceTree = SOURCE_ROOT; };
+		77E6D5BD1F3369B000C2ABD9 /* StartupCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartupCommand.swift; sourceTree = "<group>"; };
+		77E6D5C11F336AD300C2ABD9 /* PrepareModelCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrepareModelCommand.swift; sourceTree = "<group>"; };
+		77E6D5C41F336B1E00C2ABD9 /* PersonProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonProxy.swift; sourceTree = "<group>"; };
+		77E6D5C71F336F4500C2ABD9 /* PrepareViewCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrepareViewCommand.swift; sourceTree = "<group>"; };
+		77E6D5CA1F33746B00C2ABD9 /* ListPeopleMediator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPeopleMediator.swift; sourceTree = "<group>"; };
+		77E6D5CD1F33771500C2ABD9 /* NavigationMediator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationMediator.swift; sourceTree = "<group>"; };
+		77E6D5D01F3598D700C2ABD9 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		77E6D5D41F35994200C2ABD9 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		865971D0D5A28A3D1346E4FB /* Pods-Sample-ArchitecturesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample-ArchitecturesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sample-ArchitecturesTests/Pods-Sample-ArchitecturesTests.release.xcconfig"; sourceTree = "<group>"; };
 		8E8675C81D52F8DF00C73659 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E8675C91D52F8DF00C73659 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -367,10 +384,10 @@
 		77B0CC861F28DA9C008ED85D /* PureMVC */ = {
 			isa = PBXGroup;
 			children = (
-				77E6D5C01F336A8D00C2ABD9 /* Proxies */,
-				77E6D5BC1F33696400C2ABD9 /* Mediators */,
 				77E6D5BB1F33695D00C2ABD9 /* Commands */,
 				77E6D5B21F33657000C2ABD9 /* Controllers */,
+				77E6D5BC1F33696400C2ABD9 /* Mediators */,
+				77E6D5C01F336A8D00C2ABD9 /* Proxies */,
 				77E6D5AF1F33639C00C2ABD9 /* ApplicationFacade.swift */,
 			);
 			path = PureMVC;
@@ -506,19 +523,23 @@
 		77E6D5B21F33657000C2ABD9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				7773C67F1F375D6C00551CB4 /* AddPersonViewController.swift */,
 				77E6D5B31F33658300C2ABD9 /* ListPeopleViewController.swift */,
+				77E6D5D01F3598D700C2ABD9 /* NavigationController.swift */,
+				7773C6791F35B05900551CB4 /* ShowPersonViewController.swift */,
 			);
-			name = Controllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		77E6D5BB1F33695D00C2ABD9 /* Commands */ = {
 			isa = PBXGroup;
 			children = (
-				77E6D5BD1F3369B000C2ABD9 /* StartupCommand.swift */,
 				77E6D5C11F336AD300C2ABD9 /* PrepareModelCommand.swift */,
 				77E6D5C71F336F4500C2ABD9 /* PrepareViewCommand.swift */,
+				77E6D5BD1F3369B000C2ABD9 /* StartupCommand.swift */,
+				7773C67C1F374FDF00551CB4 /* DeletePersonCommand.swift */,
 			);
-			name = Commands;
+			path = Commands;
 			sourceTree = "<group>";
 		};
 		77E6D5BC1F33696400C2ABD9 /* Mediators */ = {
@@ -527,7 +548,7 @@
 				77E6D5CA1F33746B00C2ABD9 /* ListPeopleMediator.swift */,
 				77E6D5CD1F33771500C2ABD9 /* NavigationMediator.swift */,
 			);
-			name = Mediators;
+			path = Mediators;
 			sourceTree = "<group>";
 		};
 		77E6D5C01F336A8D00C2ABD9 /* Proxies */ = {
@@ -535,7 +556,17 @@
 			children = (
 				77E6D5C41F336B1E00C2ABD9 /* PersonProxy.swift */,
 			);
-			name = Proxies;
+			path = Proxies;
+			sourceTree = "<group>";
+		};
+		77E6D5D31F35992800C2ABD9 /* Dummies */ = {
+			isa = PBXGroup;
+			children = (
+				77E6D5B61F3366B300C2ABD9 /* ApplicationFacade.swift */,
+				77B0CCB71F2FA58C008ED85D /* ListPeopleWireFrame.swift */,
+				77E6D5D41F35994200C2ABD9 /* NavigationController.swift */,
+			);
+			name = Dummies;
 			sourceTree = "<group>";
 		};
 		8E8675CA1D52F8DF00C73659 /* Controllers */ = {
@@ -576,10 +607,9 @@
 		8E8675DC1D52F8DF00C73659 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				77B0CCB71F2FA58C008ED85D /* ListPeopleWireFrame.swift */,
+				77E6D5D31F35992800C2ABD9 /* Dummies */,
 				8E8675DD1D52F8DF00C73659 /* MemStore.swift */,
 				8E8675DE1D52F8DF00C73659 /* StoreProtocol.swift */,
-				77E6D5B61F3366B300C2ABD9 /* ApplicationFacade.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -1283,6 +1313,7 @@
 				77472D4C1DF6CE8600B1ED7B /* ListPeopleInteractor.swift in Sources */,
 				77B0CCB51F2F9B06008ED85D /* PersonDetailPresenter.swift in Sources */,
 				77472D4D1DF6CE8600B1ED7B /* AppDelegate.swift in Sources */,
+				77E6D5D81F35996E00C2ABD9 /* NavigationController.swift in Sources */,
 				77B0CCC81F3023BB008ED85D /* AddPersonWireFrame.swift in Sources */,
 				77472D501DF6CE8600B1ED7B /* StoreProtocol.swift in Sources */,
 				77472D511DF6CE8600B1ED7B /* ListPeopleWireFrame.swift in Sources */,
@@ -1294,6 +1325,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77E6D5D11F3598D700C2ABD9 /* NavigationController.swift in Sources */,
+				77E6D5D51F35994200C2ABD9 /* NavigationController.swift in Sources */,
 				77E6D5CE1F33771500C2ABD9 /* NavigationMediator.swift in Sources */,
 				77E6D5CB1F33746B00C2ABD9 /* ListPeopleMediator.swift in Sources */,
 				77E6D5B41F33658300C2ABD9 /* ListPeopleViewController.swift in Sources */,
@@ -1302,8 +1335,11 @@
 				77E6D5C51F336B1E00C2ABD9 /* PersonProxy.swift in Sources */,
 				77E6D5C81F336F4500C2ABD9 /* PrepareViewCommand.swift in Sources */,
 				77E6D5BE1F3369B000C2ABD9 /* StartupCommand.swift in Sources */,
+				7773C67A1F35B05900551CB4 /* ShowPersonViewController.swift in Sources */,
 				7758FB881DF59E0700BF2EBC /* Sample_ArchitecturesTests.swift in Sources */,
 				77E6D5C21F336AD300C2ABD9 /* PrepareModelCommand.swift in Sources */,
+				7773C67D1F374FDF00551CB4 /* DeletePersonCommand.swift in Sources */,
+				7773C6801F375D6C00551CB4 /* AddPersonViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1321,6 +1357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7758FBAA1DF6515A00BF2EBC /* MemStore.swift in Sources */,
+				77E6D5D61F35996B00C2ABD9 /* NavigationController.swift in Sources */,
 				7758FBAD1DF6515A00BF2EBC /* AddPersonViewController.swift in Sources */,
 				7758FBAF1DF6515A00BF2EBC /* ShowPersonViewController.swift in Sources */,
 				7758FBB11DF6515A00BF2EBC /* ListPeopleCell.swift in Sources */,
@@ -1345,6 +1382,7 @@
 				77E6D5B91F3366B700C2ABD9 /* ApplicationFacade.swift in Sources */,
 				7758FBE21DF6579000BF2EBC /* Person.swift in Sources */,
 				7758FBE31DF6579000BF2EBC /* BaseListViewController.swift in Sources */,
+				77E6D5D71F35996C00C2ABD9 /* NavigationController.swift in Sources */,
 				7758FBE51DF6579000BF2EBC /* AppDelegate.swift in Sources */,
 				7758FBE81DF6579000BF2EBC /* AddPersonViewModel.swift in Sources */,
 				7758FBE91DF6579000BF2EBC /* StoreProtocol.swift in Sources */,
@@ -1367,12 +1405,16 @@
 				77E6D5CF1F33771500C2ABD9 /* NavigationMediator.swift in Sources */,
 				77E6D5CC1F33746B00C2ABD9 /* ListPeopleMediator.swift in Sources */,
 				77B0CC8E1F28DAF0008ED85D /* Person.swift in Sources */,
+				7773C6811F375D6C00551CB4 /* AddPersonViewController.swift in Sources */,
 				77B0CC8F1F28DAF0008ED85D /* BaseListViewController.swift in Sources */,
+				7773C67E1F374FDF00551CB4 /* DeletePersonCommand.swift in Sources */,
+				77E6D5D21F3598D700C2ABD9 /* NavigationController.swift in Sources */,
 				77B0CC901F28DAF0008ED85D /* AppDelegate.swift in Sources */,
 				77E6D5C91F336F4500C2ABD9 /* PrepareViewCommand.swift in Sources */,
 				77B0CC921F28DAF0008ED85D /* StoreProtocol.swift in Sources */,
 				77E6D5C61F336B1E00C2ABD9 /* PersonProxy.swift in Sources */,
 				77E6D5AE1F33617100C2ABD9 /* ListPeopleWireFrame.swift in Sources */,
+				7773C67B1F35B05900551CB4 /* ShowPersonViewController.swift in Sources */,
 				77E6D5C31F336AD300C2ABD9 /* PrepareModelCommand.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

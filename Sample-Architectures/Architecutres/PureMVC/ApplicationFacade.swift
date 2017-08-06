@@ -12,11 +12,18 @@ import puremvc
 class ApplicationFacade: Facade {
     
     static var STARTUP = "startup"
+    static var DELETE_PERSON = "deletePerson"
+    static var NEW_PERSON = "newPerson"
+
+    static var PERSON_SELECTED = "personSelected"
+    static var PERSON_DELETED = "personDeleted"
     
     override func initializeController() {
         super.initializeController()
         
         registerCommand(ApplicationFacade.STARTUP, commandClassRef: StartupCommand.self)
+        registerCommand(ApplicationFacade.DELETE_PERSON, commandClassRef: DeletePersonCommand.self)
+        
     }
     
     static var sharedInstance: ApplicationFacade = {
@@ -27,7 +34,7 @@ class ApplicationFacade: Facade {
 //        return super.getInstance { ApplicationFacade() } as! ApplicationFacade
 //    }
     
-    func startup(app: UINavigationController) {
+    func startup(app: NavigationController) {
         sendNotification(ApplicationFacade.STARTUP, body: app)
     }
     

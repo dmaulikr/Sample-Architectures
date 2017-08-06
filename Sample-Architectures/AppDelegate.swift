@@ -53,9 +53,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         case .Viper: self.window!.rootViewController = ListPeopleWireFrame.createListPeople()
         
         case .PureMVC:
-            let navigationViewController = storyboard.instantiateInitialViewController()
+            let navigationViewController = storyboard.instantiateViewController(withIdentifier: "NavigationController")
             self.window!.rootViewController = navigationViewController
-            ApplicationFacade.sharedInstance.startup(app: window!.rootViewController as! UINavigationController)
+            ApplicationFacade.sharedInstance.startup(app: navigationViewController as! NavigationController)
             
         default: self.window!.rootViewController = storyboard.instantiateInitialViewController()!
         }

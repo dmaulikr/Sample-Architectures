@@ -12,11 +12,9 @@ import puremvc
 class PrepareViewCommand: SimpleCommand {
     
     override func execute(_ notification: INotification!) {
-        dump(notification)
-        let navigationViewController = notification.body() as! UINavigationController
 
-        if let app = navigationViewController.visibleViewController as? UINavigationController {
-            facade.register(NavigationMediator(viewComponent: app ))
+        if let app = notification.body() as? NavigationController {
+            facade.register(NavigationMediator(viewComponent: app))
         }
         
     }
