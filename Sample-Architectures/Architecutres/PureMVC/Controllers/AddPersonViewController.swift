@@ -10,14 +10,20 @@ import UIKit
 
 class AddPersonViewController: UIViewController {
 
-    @IBOutlet fileprivate weak var nameTextField:UITextField!
-    @IBOutlet fileprivate weak var emailTextField:UITextField!
-    @IBOutlet fileprivate weak var ageTextField:UITextField!
+    @IBOutlet fileprivate weak var nameTextField: UITextField!
+    @IBOutlet fileprivate weak var emailTextField: UITextField!
+    @IBOutlet fileprivate weak var ageTextField: UITextField!
     
-//    var delegate:AddPersonDelegate?
+    var mediator: AddPersonMediator?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.mediator?.viewDidLoad()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.mediator?.viewWillAppear(animated)
     }
     
     @IBAction func didTapCancelButton(_ sender: AnyObject) {
@@ -31,16 +37,18 @@ class AddPersonViewController: UIViewController {
             email: self.emailTextField.text!,
             age: Int(self.ageTextField.text!)!)
         
-        do {
-            try AppDelegate.dataStore.create(person) {
-//                self.delegate?.didAddPerson(person)
-                self.dismiss(animated: true, completion: nil)
-            }
-        }
-        catch {
-            
-        }
+        self.mediator?.onCreate(person)
         
     }
+    
+    func onAdded() {
+        self.dismiss(animated: true, completion: nil)
+    }
 
+    func resetForm() {
+        self.nameTextField.text = ""
+        self.emailTextField.text = ""
+        self.ageTextField.text = ""
+    }
+    
 }

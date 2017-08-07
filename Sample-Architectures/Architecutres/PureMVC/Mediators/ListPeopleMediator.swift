@@ -13,6 +13,10 @@ class ListPeopleMediator: Mediator {
 
     open override class func name() -> String! { return "ListPeopleMediator" }
     
+    var listPeopleViewController: ListPeopleViewController {
+        return viewComponent as! ListPeopleViewController
+    }
+    
     init(viewComponent: ListPeopleViewController) {
         super.init(mediatorName: ListPeopleMediator.name(), viewComponent: viewComponent)
     }
@@ -22,15 +26,11 @@ class ListPeopleMediator: Mediator {
     }
     
     func viewDidLoad() {
-
-        if let personProxy = facade.retrieveProxy(PersonProxy.name()) as? PersonProxy {
-            self.listPeopleViewController.people = personProxy.people
-        }
-        
+        self.load()
     }
     
     func onDelete(_ person: Person) {
-        sendNotification(ApplicationFacade.DELETE_PERSON)
+        sendNotification(ApplicationFacade.DELETE_PERSON, body: person)
     }
     
     func onSelect(_ person: Person) {
@@ -42,11 +42,24 @@ class ListPeopleMediator: Mediator {
     }
     
     override func listNotificationInterests() -> [Any]! {
-        return []
+        return [
+            ApplicationFacade.PERSON_ADDED
+        ]
     }
     
-    var listPeopleViewController: ListPeopleViewController {
-        return viewComponent as! ListPeopleViewController
-    }    
+    override func handle(_ notification: INotification) {
+        switch notification.name() {
+        case ApplicationFacade.PERSON_ADDED:
+            self.load()
+            self.listPeopleViewController.reload()
+        default: break
+        }
+    }
+    
+    private func load() {
+        if let personProxy = facade.retrieveProxy(PersonProxy.name()) as? PersonProxy {
+            self.listPeopleViewController.people = personProxy.people
+        }
+    }
 
 }

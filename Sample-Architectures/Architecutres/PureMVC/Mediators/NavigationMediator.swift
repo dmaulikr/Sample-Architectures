@@ -25,6 +25,7 @@ class NavigationMediator: Mediator {
     func viewDidLoad() {
         
         facade.register(ListPeopleMediator(viewComponent: navigationController.peopleList))
+        facade.register(AddPersonMediator(viewComponent: navigationController.personForm))
         
     }
     

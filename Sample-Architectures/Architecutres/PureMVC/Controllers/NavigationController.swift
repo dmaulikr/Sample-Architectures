@@ -14,14 +14,14 @@ class NavigationController: UINavigationController {
 
     var peopleList: ListPeopleViewController!
     var personDetails: ShowPersonViewController!
-    var personForm: UINavigationController!
+    var personForm: AddPersonViewController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.peopleList = self.viewControllers.first as! ListPeopleViewController
         self.personDetails = self.storyboard?.instantiateViewController(withIdentifier: "ShowPersonViewController") as! ShowPersonViewController
-        self.personForm = self.storyboard?.instantiateViewController(withIdentifier: "AddPersonNavigationController") as! UINavigationController
+        self.personForm = self.storyboard?.instantiateViewController(withIdentifier: "AddPersonViewController") as! AddPersonViewController
         
         self.mediator?.viewDidLoad()
     }
@@ -32,7 +32,9 @@ class NavigationController: UINavigationController {
     }
     
     func showPersonForm() {
-        self.present(self.personForm, animated: true, completion: nil)
+        let navigation = self.storyboard?.instantiateViewController(withIdentifier: "AddPersonNavigationController") as! UINavigationController
+        navigation.viewControllers.append(self.personForm)
+        self.present(navigation, animated: true, completion: nil)
     }
 
 }

@@ -37,6 +37,10 @@ class ListPeopleViewController: BaseListViewController {
         self.tableView.isEditing = editing
     }
 
+    func reload() {
+        self.tableView.reloadData()
+    }
+    
 }
 
 extension ListPeopleViewController: UITableViewDataSource {

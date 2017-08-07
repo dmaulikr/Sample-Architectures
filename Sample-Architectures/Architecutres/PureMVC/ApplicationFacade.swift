@@ -15,14 +15,18 @@ class ApplicationFacade: Facade {
     static var DELETE_PERSON = "deletePerson"
     static var NEW_PERSON = "newPerson"
 
+    static var CREATE_PERSON = "createPerson"
+    
     static var PERSON_SELECTED = "personSelected"
     static var PERSON_DELETED = "personDeleted"
+    static var PERSON_ADDED = "personAdded"
     
     override func initializeController() {
         super.initializeController()
         
         registerCommand(ApplicationFacade.STARTUP, commandClassRef: StartupCommand.self)
         registerCommand(ApplicationFacade.DELETE_PERSON, commandClassRef: DeletePersonCommand.self)
+        registerCommand(ApplicationFacade.CREATE_PERSON, commandClassRef: CreatePersonCommand.self)
         
     }
     

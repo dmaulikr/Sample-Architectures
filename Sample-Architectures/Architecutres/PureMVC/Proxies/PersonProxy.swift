@@ -32,4 +32,10 @@ class PersonProxy: Proxy {
         }
     }
     
+    func add(_ person: Person) {
+        var people = data as! [Person]
+        people.append(person)
+        data = people
+    }
+    
 }
